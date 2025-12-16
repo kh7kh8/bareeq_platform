@@ -1,0 +1,114 @@
+<div id="cart" class="header-cart-dropdown dropdown">
+  {# زر فتح السلة في الهيدر #}
+  <button type="button"
+          data-bs-toggle="dropdown"
+          class="cart-toggle-btn d-flex align-items-center">
+    <span class="cart-icon-wrap">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </span>
+    <span class="cart-toggle-label">
+      {{ text_items }}
+    </span>
+  </button>
+
+  <ul class="dropdown-menu dropdown-menu-end cart-dropdown-menu p-0">
+    {% if products %}
+      <li class="p-3">
+        <div class="cart-items-list">
+          {% for product in products %}
+            <div class="cart-item">
+              <div class="cart-item-thumb">
+                {% if product.thumb %}
+                  <a href="{{ product.href }}">
+                    <img src="{{ product.thumb }}"
+                         alt="{{ product.name }}"
+                         title="{{ product.name }}">
+                  </a>
+                {% endif %}
+              </div>
+
+              <div class="cart-item-info">
+                <a href="{{ product.href }}" class="cart-item-name">
+                  {{ product.name }}
+                </a>
+
+                <ul class="cart-item-meta list-unstyled mb-0">
+                  <li class="cart-item-model">
+                    <small>{{ text_model }}: {{ product.model }}</small>
+                  </li>
+
+                  {% for option in product.option %}
+                    <li>
+                      <small>{{ option.name }}: {{ option.value }}</small>
+                    </li>
+                  {% endfor %}
+
+                  {% if product.subscription %}
+                    <li>
+                      <small>{{ text_subscription }}: {{ product.subscription }}</small>
+                    </li>
+                  {% endif %}
+
+                  {% if product.reward %}
+                    <li>
+                      <small>{{ text_points }}: {{ product.reward }}</small>
+                    </li>
+                  {% endif %}
+                </ul>
+              </div>
+
+              <div class="cart-item-side text-end">
+                <div class="cart-item-qty">
+                  x {{ product.quantity }}
+                </div>
+                <div class="cart-item-price">
+                  <x-currency code="{{ currency }}" amount="{{ product.total }}"></x-currency>
+                </div>
+
+                <form action="{{ remove }}"
+                      method="post"
+                      data-oc-toggle="ajax"
+                      data-oc-load="{{ list }}"
+                      data-oc-target="#cart"
+                      class="cart-item-remove">
+                  <input type="hidden" name="key" value="{{ product.cart_id }}">
+                  <button type="submit"
+                          data-bs-toggle="tooltip"
+                          title="{{ button_remove }}"
+                          class="cart-remove-btn">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="cart-summary">
+          {% for total in totals %}
+            <div class="cart-summary-row">
+              <span class="cart-summary-title">{{ total.title }}</span>
+              <span class="cart-summary-value">
+                <x-currency code="{{ currency }}" amount="{{ total.value }}"></x-currency>
+              </span>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="cart-actions">
+          <a href="{{ cart }}" class="cart-action-btn cart-action-btn--outline">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>{{ text_cart }}</span>
+          </a>
+
+          <a href="{{ checkout }}" class="cart-action-btn cart-action-btn--primary">
+            <i class="fa-solid fa-share"></i>
+            <span>{{ text_checkout }}</span>
+          </a>
+        </div>
+      </li>
+    {% else %}
+      <li class="text-center p-4">{{ text_no_results }}</li>
+    {% endif %}
+  </ul>
+</div>

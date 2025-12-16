@@ -1,0 +1,2512 @@
+@import "fonts/fontawesome/css/all.min.css";
+
+/* ========== ألوان و متغيرات أساسية (أعدناها لألوان طبيعية) ========== */
+$blue: #1e91cf; /* اللون الرئيسي للموقع */
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+$white: #ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000000;
+
+$enable-caret: false;
+$line-height-base: 1.8;
+$input-btn-padding-y: .35rem;
+$border-radius: .25rem;
+$border-radius-sm: .2rem;
+$border-radius-lg: .3rem;
+$border-radius-xl: .3rem;
+$border-radius-2xl: .3rem;
+$font-size-base: .8125rem;
+$carousel-control-color: rgba(0, 0, 0, 0.8);
+$carousel-control-width: 30px;
+$carousel-indicator-width: 9px;
+$carousel-indicator-height: 9px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer: 5px;
+$carousel-indicator-opacity: .5;
+$carousel-indicator-active-bg: rgba(0, 0, 0, 0.9);
+$carousel-indicator-active-opacity: .9;
+$min-contrast-ratio: 4.5;
+$link-decoration: none;
+
+/* Bootstrap */
+@import "scss/bootstrap";
+
+/* ========== إعداد عام RTL ========== */
+html, body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Headings/colors */
+h1, h2, h3, h4, h5, h6 {
+  color: #444;
+}
+
+legend {
+  padding: 7px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+label {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* Chrome border line */
+button:focus {
+  outline: none !important;
+}
+
+/* ALERT */
+#alert {
+  z-index: 9999;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+}
+
+@media (min-width: 992px) {
+  #alert {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1140px) {
+  #alert {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1320px) {
+  #alert {
+    width: 600px;
+  }
+}
+
+#alert .alert {
+  margin-bottom: 15px;
+}
+
+#alert .alert-primary {
+  box-shadow: 0 0 0 5px rgb(var(--bs-primary-rgb), 0.1);
+}
+
+#alert .alert-secondary {
+  box-shadow: 0 0 0 5px rgb(var(--bs-secondary-rgb), 0.1);
+}
+
+#alert .alert-success {
+  box-shadow: 0 0 0 5px rgb(var(--bs-success-rgb), 0.1);
+}
+
+#alert .alert-warning {
+  box-shadow: 0 0 0 5px rgb(var(--bs-warning-rgb), 0.1);
+}
+
+#alert .alert-danger {
+  box-shadow: 0 0 0 5px rgb(var(--bs-danger-rgb), 0.1);
+}
+
+#alert .alert-info {
+  box-shadow: 0 0 0 5px rgb(var(--bs-info-rgb), 0.1);
+}
+
+#alert .alert-light {
+  box-shadow: 0 0 0 5px rgb(var(--bs-light-rgb), 0.1);
+}
+
+#alert .alert-dark {
+  box-shadow: 0 0 0 5px rgb(var(--bs-dark-rgb), 0.1);
+}
+
+/* top */
+#top {
+  background-color: var(--bs-secondary-bg);
+  border-bottom: 1px solid var(--bs-border-color);
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+#top ul.list-inline {
+  margin-bottom: 0;
+}
+
+#top .list-inline-item > a,
+#top .list-inline-item .dropdown > a {
+  font-size: 1.1em;
+  color: var(--bs-gray-600);
+  line-height: 40px;
+  vertical-align: middle;
+  padding: 10px 0 5px 0;
+}
+
+/* logo */
+#logo {
+  text-align: center;
+  margin: 7px 0;
+}
+
+#logo img {
+  max-width: 200px;
+}
+
+@media (min-width: 768px) {
+  #logo {
+    text-align: right;
+  }
+}
+
+/* search */
+#search {
+  margin-bottom: 10px;
+}
+
+#search .form-control-lg {
+  height: 40px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 10px;
+}
+
+#search .btn-lg {
+  font-size: 15px;
+  line-height: 18px;
+  padding: 0.57rem 35px;
+  text-shadow: 0 1px 0 #FFF;
+}
+
+/* ================== Cart Page (صفحة السلة الكاملة) ================== */
+
+#checkout-cart {
+  background: #fdf6ec;            /* نفس البيج العام للموقع */
+  padding: 60px 0 80px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+
+#checkout-cart > .container {
+  max-width: 900px;               /* نخلي المحتوى أضيق شوي مثل التصميم */
+}
+
+/* عنوان صفحة السلة */
+#checkout-cart h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 0.5rem;
+}
+
+/* نص "Your shopping cart is empty" أو الرسالة أعلى الجدول */
+#checkout-cart p {
+  text-align: center;
+  color: #8b7a66;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* صندوق الأزرار تحت (لما تكون السلة فاضية) */
+#checkout-cart .buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* أزرار داخل .buttons */
+#checkout-cart .buttons .pull-right,
+#checkout-cart .buttons .text-end {
+  float: none !important;
+  display: inline-block;
+}
+
+/* زر Continue – نخليه بنفس ستايل أزرار بريق */
+#checkout-cart .btn-primary {
+  background: #8a9b6a;
+  border-color: #8a9b6a;
+  border-radius: 999px;
+  padding: 0.7rem 2.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(84, 148, 93, 0.25);
+  text-decoration: none;
+}
+
+#checkout-cart .btn-primary:hover {
+  background: #7c8e5f;
+  border-color: #7c8e5f;
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(84, 148, 93, 0.32);
+}
+
+
+/* ========== Breadcrumb – ستايل ناعم يناسب بريق ========== */
+
+.breadcrumb {
+  margin: 0 0 24px;
+  padding: 0.75rem 1.5rem;
+
+  /* شريط ناعم بعرض الكارد */
+  border-radius: 16px;
+  background: linear-gradient(90deg, #fbf3e5 0%, #faeee1 45%, #f9e7dc 100%);
+  border: 1px solid #f1e4d5;
+  box-shadow: 0 10px 24px rgba(171, 139, 107, 0.08);
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+
+  direction: rtl;          // الموقع عربي
+  flex-direction: row-reverse; // البيت يكون في أقصى اليمين
+}
+
+/* عناصر المسار */
+.breadcrumb > li.breadcrumb-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  color: #8f7b66;
+  padding: 0;
+  margin: 0;
+  text-shadow: none;
+}
+
+/* نفصل بين العناصر بسهم صغير (بدل الشرطة والباكسات القديمة) */
+.breadcrumb > li.breadcrumb-item + li.breadcrumb-item::before {
+  content: "\f104"; /* سهم صغير */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin: 0 0.45rem;
+  color: #c3a782;
+}
+
+/* الروابط داخل المسار */
+.breadcrumb > li.breadcrumb-item a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  transition: color 0.18s ease-in-out;
+}
+
+.breadcrumb > li.breadcrumb-item a:hover {
+  color: #3f5f3a;
+}
+
+/* العنصر الأخير (الصفحة الحالية) */
+.breadcrumb > li.breadcrumb-item:last-child {
+  font-weight: 700;
+  color: #3a3025;
+}
+
+/* لو كان آخر عنصر span بدون رابط */
+.breadcrumb > li.breadcrumb-item:last-child span {
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+/* أيقونة البيت */
+.breadcrumb i {
+  font-size: 0.95rem;
+  margin-inline-start: 0.15rem;
+}
+
+
+
+/* إصلاح اتجاه breadcrumb بحيث يبدأ من اليسار لليمين */
+.breadcrumb {
+  flex-direction: row;
+  direction: ltr;
+  justify-content: flex-start;
+}
+
+/* لكن نخلي النصوص RTL */
+.breadcrumb .breadcrumb-item {
+  direction: rtl;
+}
+
+/* تعديل ترتيب السهم */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  padding: 0 6px;
+  color: #c5b9a8;
+}
+
+
+
+/* category */
+#category {
+  float: right;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#menu .navbar-toggler i {
+  color: #fff;
+  border-color: #fff;
+  font-size: 0.9em;
+}
+
+/* required */
+label:has(+ div *[required]):before {
+  content: '* ';
+  color: red;
+  font-weight: bold;
+}
+
+label.required:before,
+label:has(+ input:required):before,
+label:has(+ select:required):before,
+label:has(+ textarea:required):before {
+  content: '* ';
+  color: red;
+  font-weight: bold;
+}
+
+.form-switch-lg {
+  font-size: 20px;
+}
+
+.nav-tabs {
+  margin-bottom: 15px;
+}
+
+.form-check {
+  .form-check-input {
+    margin-top: 0.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-form-label {
+    text-align: right;
+  }
+}
+
+/* ========== فوتر بريق ========== */
+
+.site-footer {
+  background: #fdf6ec;
+  border: none;
+  border-top: 1px solid #f0e2d3;
+  padding: 60px 0 30px;
+  color: #4b4035;
+  font-size: 0.9rem;
+}
+
+/* نُبطل شكل الفوتر القديم الداكن */
+.site-footer footer {
+  all: unset;
+}
+
+.site-footer .footer-main {
+  margin-bottom: 24px;
+}
+
+.footer-col {
+  font-size: 0.9rem;
+}
+
+/* عناوين الأعمدة */
+.footer-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 1rem;
+}
+
+/* القوائم */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li + li {
+  margin-top: 0.4rem;
+}
+
+.footer-list a {
+  color: #716354;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-list a:hover {
+  color: #3f5f3a;
+}
+
+/* تواصل معنا */
+.footer-contact-item {
+  margin-bottom: 0.6rem;
+}
+
+.footer-contact-label {
+  display: block;
+  font-weight: 600;
+  color: #3a3025;
+  margin-bottom: 0.15rem;
+}
+
+.footer-contact-link,
+.footer-contact-text {
+  color: #716354;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-contact-link:hover {
+  color: #3f5f3a;
+}
+
+/* هوية بريق */
+.footer-logo-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e4ddcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-brand-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #3a3025;
+}
+
+.footer-brand-tagline {
+  font-size: 0.8rem;
+  color: #b4885f;
+}
+
+.footer-brand-text {
+  font-size: 0.85rem;
+  color: #7b6b59;
+}
+
+/* السوشال */
+.footer-social a {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #f3e6d6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c5c4a;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.footer-social a:hover {
+  background: #8a9b6a;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* الخط الفاصل وأسفل الفوتر */
+.footer-divider {
+  border: none;
+  border-top: 1px solid #ead9c7;
+  margin: 26px 0 18px;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #8b7a66;
+}
+
+/* استجابة للموبايل */
+@media (max-width: 767.98px) {
+  .site-footer {
+    text-align: center;
+  }
+
+  .footer-brand {
+    text-align: center !important;
+  }
+
+  .footer-brand-header {
+    justify-content: center;
+  }
+
+  .footer-social {
+    justify-content: center !important;
+  }
+}
+
+/* breadcrumb RTL */
+.breadcrumb {
+  margin: 0 0 20px 0;
+  padding: 8px 0;
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  background-color: var(--bs-tertiary-bg);
+  direction: rtl;
+
+  i {
+    font-size: 15px;
+  }
+
+  > li.breadcrumb-item {
+    text-shadow: 0 1px 0 #FFF;
+    padding: 0 20px;
+    position: relative;
+    white-space: nowrap;
+
+    > a {
+      text-decoration: none;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -3px;
+      left: -5px;
+      width: 29px;
+      height: 29px;
+      border-left: 1px solid var(--bs-border-color);
+      border-bottom: 1px solid var(--bs-border-color);
+      transform: rotate(45deg);
+    }
+
+    + li {
+      &:before {
+        content: '';
+        padding: 0;
+      }
+    }
+  }
+}
+
+/* product thumb */
+.product-thumb {
+  border: 1px solid #ddd;
+  position: relative;
+  height: 100%;
+}
+
+.product-thumb .image {
+  text-align: center;
+}
+
+.product-thumb .image a:hover {
+  opacity: 0.8;
+}
+
+.product-thumb .description {
+  padding: 15px;
+  margin-bottom: 45px;
+}
+
+.product-thumb .description h4 {
+  font-weight: bold;
+}
+
+/* button strip at bottom of product */
+.product-thumb .button {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.product-thumb .button button {
+  width: 33.33%;
+  border: none;
+  border-top: 1px solid var(--bs-border-color);
+  background-color: var(--bs-tertiary-bg);
+  color: var(--bs-gray-600);
+  line-height: 38px;
+  text-align: center;
+}
+
+.product-thumb .button button:hover {
+  color: var(--bs-gray-600);
+  background-color: #ddd;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.product-thumb .button button + button {
+  border-right: 1px solid var(--bs-border-color);
+}
+
+/* desktop product list RTL */
+@media (min-width: 960px) {
+  .product-list .product-thumb {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .product-list .product-thumb .image {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .product-list .product-thumb .content {
+    flex-direction: column;
+    flex: 75%;
+    position: relative;
+  }
+
+  .product-list .product-thumb .button {
+    border-right: 1px solid #ddd;
+    width: calc(100% - 15px);
+    margin-right: 15px;
+    margin-left: 0;
+  }
+}
+
+/* rating */
+.rating .fa-stack {
+  width: 20px;
+}
+
+.rating .fa-star {
+  color: #FC0;
+  font-size: 15px;
+}
+
+.rating .fa-star + .fa-star {
+  color: #E69500;
+}
+
+/* product list */
+.price {
+  color: #444;
+}
+
+.price-new {
+  font-weight: 600;
+}
+
+.price-old {
+  color: #dc512c;
+  text-decoration: line-through;
+}
+
+.price-tax {
+  color: #999;
+  font-size: 12px;
+  display: block;
+}
+
+/* blog */
+.blog-thumb {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.blog-thumb h4 {
+  font-weight: bold;
+}
+
+.blog-thumb .image {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.blog-thumb .image a:hover {
+  opacity: 0.8;
+}
+
+.blog-thumb .description {
+  padding: 15px;
+}
+
+/* cookie */
+#cookie {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 9999;
+  opacity: 0.95;
+  color: #ecf0f1;
+  background: #343a40;
+}
+
+#cookie div {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+/* input groups */
+.input-group-lg > .form-control,
+.input-group-lg > .form-select,
+.input-group-lg > .input-group-text,
+.input-group-lg > .btn {
+  height: #{$input-height-lg};
+}
+
+.input-group-sm > .form-control,
+.input-group-sm > .form-select,
+.input-group-sm > .input-group-text,
+.input-group-sm > .btn {
+  height: #{$input-height-sm};
+}
+
+.btn-light {
+  --bs-btn-border-color: var(--bs-gray-300);
+}
+
+/* Carousel RTL */
+.carousel {
+  border: 4px solid #{$white};
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+  margin-bottom: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  transition: all .3s ease;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel .carousel-control-prev {
+  opacity: 0;
+  right: -20px;
+  left: auto;
+}
+
+.carousel .carousel-control-next {
+  opacity: 0;
+  left: -20px;
+  right: auto;
+}
+
+.carousel:hover .carousel-control-prev {
+  opacity: 0.7;
+  right: 0px;
+}
+
+.carousel:hover .carousel-control-next {
+  opacity: 0.7;
+  left: 0px;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+
+  [data-bs-target] {
+    border-radius: 20px;
+    border: 1px solid #000000;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+
+  li:hover {
+    opacity: .7;
+  }
+
+  .active {
+    opacity: $carousel-indicator-active-opacity;
+  }
+}
+/* ===== بنر بريق – فل عرض الصفحة ===== */
+.custom-banner-box {
+  /* نكسر حدود الـ container ونخلي البنر بعرض الشاشة */
+  width: 100vw;                                /* عرض الشاشة كامل */
+  margin-inline: calc(50% - 50vw);             /* يطلع برّه الـ container يمين ويسار */
+  background: #fdf0e3;                          /* نفس البيج */
+  padding: 70px 0;                              /* مسافة فوق وتحت */
+
+  /* ظل خفيف وطيّة ناعمة إذا حبيتي */
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.04);
+}
+
+/* نضبط المحتوى اللي داخل البنر (يظل في وسط الصفحة) */
+.custom-banner-box .banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* صورة البنر – تكبر وتمتد أكثر */
+.custom-banner-box .banner-image img {
+  width: 530px;
+  max-width: 1500px; /* ممكن تكبريه لـ 600 لو حبيتي */
+  height: 460px;       
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+/* النص في البنر */
+.custom-banner-box .banner-text {
+  padding-inline: 40px;
+}
+
+.custom-banner-box .banner-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.custom-banner-box .banner-desc {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* ترتيب الأعمدة في الشاشات الصغيرة: الصورة فوق والنص تحت */
+@media (max-width: 991.98px) {
+  .custom-banner-box .banner-content {
+    text-align: center;
+  }
+
+  .custom-banner-box .banner-text {
+    padding-inline: 0;
+    margin-top: 1.5rem;
+  }
+}
+
+
+
+/* زر البنر "ابدأ التسوق الآن" */
+.banner-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.85rem 2.8rem;
+  border-radius: 800px;
+
+  background: #8a9b6a;         /* أخضر ناعم */
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  text-decoration: none;
+  border: none;
+
+  box-shadow: 0 10px 25px rgba(84, 148, 93, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+.banner-btn:hover {
+  background: #89a05e;         /* أغمق شوي في الهوفر */
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(84, 148, 93, 0.3);
+}
+
+.banner-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+    padding: 0.75rem 1.8rem;
+    background: #ffffff;
+    border: 2px solid #7e9b61;
+    color: #7e9b61;
+    border-radius: 800px;
+    text-decoration: none;
+    font-size: 0.95rem;
+  font-weight: 600;
+    transition: 0.3s;
+
+    box-shadow: 0 10px 25px rgba(84, 148, 93, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+.banner-btn-outline:hover {
+    background: #f5fbe9;
+    border-color: #6e884f;
+    color: #6e884f;
+    transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(84, 148, 93, 0.3);
+}
+
+/* ================== قسم المميزات (لماذا تختار بريق؟) ================== */
+
+.features-section {
+  background-color: #fdf6ec;
+  padding: 80px 0;
+  border-radius: 20px; // لو تريدي نفس نعومة الحواف
+  margin-top: 10px;
+}
+
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+/* الشارة الصغيرة أعلى العنوان */
+.features-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 18px;
+  margin-bottom: 18px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #8a6b4c;
+
+  background: #fbeeda;
+  border-radius: 999px;
+}
+
+/* العنوان والوصف */
+.features-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  font-size: 0.98rem;
+  color: #8b7a66;
+  margin-bottom: 40px;
+}
+
+/* شبكة الكروت */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* كرت ميزة واحد */
+.feature-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 26px 22px 24px;
+  text-align: center;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1e4d5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* دائرة الأيقونة */
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #7a8f5a;
+}
+
+/* ألوان مختلفة لكل كرت مثل الفيجما */
+.feature-card:nth-child(1) .feature-icon {
+  background: #eaf3e1;
+}
+
+.feature-card:nth-child(2) .feature-icon {
+  background: #ffeae0;
+}
+
+.feature-card:nth-child(3) .feature-icon {
+  background: #fff4d6;
+}
+
+.feature-card:nth-child(4) .feature-icon {
+  background: #eaf2ff;
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3a3025;
+}
+
+.feature-text {
+  font-size: 0.9rem;
+  color: #8b7a66;
+  line-height: 1.7;
+}
+
+
+/* RTL helpers */
+.text-start { text-align: right !important; }
+.text-end   { text-align: left !important; }
+
+.ml-0 { margin-left: 0 !important; }
+.mr-0 { margin-right: 0 !important; }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+
+/* ========== الهيدر الجديد (بريق) ========== */
+#header-main {
+  background: #fdf6ec; /* بيج ناعم */
+  border-bottom: 1px solid #f0e2d3;
+}
+
+#header-main .container {
+  max-width: 1200px;
+}
+
+/* Sticky Header */
+#header-main {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+}
+
+/* لو حسّيتي المحتوى يدخل تحت الهيدر
+   ممكن نضيف مسافة بسيطة أعلى الـ main */
+main {
+  padding-top: 10px;
+}
+
+
+html[dir="rtl"] #header-main .d-flex.align-items-center.justify-content-between {
+  flex-direction: row-reverse;
+}
+
+/* براند الهيدر */
+.header-brand-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #6f8a4a; /* أخضر ناعم */
+}
+
+.header-brand-subtitle {
+  font-size: 0.8rem;
+  color: #d58a78; /* وردي فاتح */
+}
+
+.header-logo-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #e4ddcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* المنيو في المنتصف */
+.header-nav {
+  font-size: 0.95rem;
+}
+
+.header-nav .navbar-nav,
+.header-nav ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #666666;
+  font-weight: 500;
+}
+
+.header-nav a:hover {
+  color: #3f5f3a;
+}
+
+/* أيقونات الهيدر */
+.header-actions {
+  font-size: 1.2rem;
+}
+
+.header-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #8a9b6a;
+}
+
+.header-icon:hover {
+  color: #5f7245;
+}
+
+/* بادج السلة */
+.header-cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: #e28373;
+  color: #fff;
+  font-size: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html[dir="rtl"] .header-cart-badge {
+  right: auto;
+  left: -8px;
+}
+
+@media (max-width: 767.98px) {
+  #header-main .d-flex.align-items-center.justify-content-between {
+    padding-inline: 0.75rem;
+  }
+
+  .header-nav {
+    display: none;  /* إلى أن نعمل منيو للموبايل */
+  }
+
+  .header-brand-subtitle {
+    display: none;
+  }
+}
+
+
+
+/* ===== منيو الهيدر داخل #header-main ===== */
+
+/* نخلي شريط #menu شفاف بدون حدود داخل الهيدر */
+#header-main #menu {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* نلغي أي container إضافي جوه المنيو */
+#header-main #menu > .container,
+#header-main #menu > .container-fluid {
+  padding: 0;
+}
+
+/* وسطّي عناصر المنيو */
+#header-main #menu .navbar-collapse,
+#header-main #menu .navbar-nav {
+  justify-content: center;
+}
+
+/* المنيو كروابط نصية في الوسط مع مسافات بينهم */
+#header-main #menu .navbar-nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+/* لون وخط الروابط – هنا السبب الرئيسي إنها ما كانت تبان */
+#header-main #menu .navbar-nav > li > a,
+#header-main #menu .nav-link {
+  color: #666666 !important;          /* كان أبيض قبل */
+  font-weight: 500;
+  padding: 0;                          /* نشيل البادينج الكبير */
+  background: transparent !important;
+}
+
+/* هوفر بسيط */
+#header-main #menu .navbar-nav > li > a:hover,
+#header-main #menu .nav-link:hover {
+  color: #3f5f3a !important;
+  background: transparent !important;
+}
+
+/* في RTL نخلي ترتيب الروابط من اليمين لليسار */
+html[dir="rtl"] #header-main #menu .navbar-nav {
+  flex-direction: row-reverse;
+}
+
+/* منيو الهيدر */
+.header-menu {
+  font-size: 0.95rem;
+}
+
+.header-menu-link {
+  color: #666666;
+  font-weight: 500;
+}
+
+.header-menu-link:hover {
+  color: #3f5f3a;
+}
+
+/* ================== قسم المتاجر (متاجر العالم الافتراضي) ================== */
+
+.stores-section {
+  background-color: #c0bfbe;   // نفس خلفية التصميم
+  padding: 80px 0;
+  
+}
+
+.stores-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* الشارة الصغيرة فوق العنوان (مثل: المتاجر) */
+.stores-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 18px;
+  margin-bottom: 16px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #8a6b4c;
+
+  background: #fbeeda;
+  border-radius: 999px;
+}
+
+/* عنوان ووصف القسم */
+.stores-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 8px;
+}
+
+.stores-subtitle {
+  font-size: 0.98rem;
+  color: #8b7a66;
+  margin-bottom: 38px;
+}
+
+/* شبكة الكروت (3 أعمدة على الديسكتوب) */
+.stores-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* الكرت الواحد للمتجر */
+.store-card {
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1e4d5;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.store-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* صورة المتجر أعلى الكرت */
+.store-card__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.store-card__image img {
+  width: 100%;
+  height: 210px;            // عدّلي الارتفاع حسب ذوقك
+  object-fit: cover;
+  display: block;
+}
+
+/* أيقونة المفضلة والبادج أعلى الصورة */
+.store-card__favorite {
+  position: absolute;
+  top: 12px;
+  left: 14px;              // في RTL تطلع يسار
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #888;
+}
+
+.store-card__badge {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: #e7f5d9;
+  color: #6d8b41;
+}
+
+/* محتوى الكرت أسفل الصورة */
+.store-card__body {
+  padding: 18px 20px 16px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.store-card__name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin: 0;
+}
+
+.store-card__desc {
+  font-size: 0.9rem;
+  color: #8b7a66;
+  margin: 0 0 6px 0;
+}
+
+/* السطر الأخير: تقييم + سعر/نص */
+.store-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.store-card__rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: #8b7a66;
+}
+
+.store-card__rating i {
+  color: #f4b400; // نجمة ذهبية
+  font-size: 0.9rem;
+}
+
+.store-card__price {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3a3025;
+}
+
+/* زر "عرض جميع المتاجر" تحت الشبكة */
+.stores-cta-wrapper {
+  text-align: center;
+}
+
+.stores-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 0.8rem 2.4rem;
+  border-radius: 999px;
+
+  background: #8a9b6a;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+
+  box-shadow: 0 10px 25px rgba(84, 148, 93, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+.stores-cta-btn:hover {
+  background: #89a05e;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(84, 148, 93, 0.3);
+}
+
+/* ================== قسم النشرة الإخبارية ================== */
+
+.newsletter-section {
+  width: 100vw;                               // فل عرض الصفحة
+  margin-inline: calc(5% - 5vw);            // يطلع من حدود الـ container
+  background: linear-gradient(
+    135deg,
+    #9fb58a 0%,
+    #c1b38c 45%,
+    #d7b49b 100%
+  );
+  padding: 80px 0 90px;
+  border-radius: 25px;
+  color: #ffffff;
+}
+
+.newsletter-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+/* أيقونة الظرف */
+.newsletter-icon-wrap {
+  width: 76px;
+  height: 76px;
+  border-radius: 28px;
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 22px;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.newsletter-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.newsletter-subtitle {
+  font-size: 0.98rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 34px;
+}
+
+/* الفورم: حقل + زر */
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 14px;
+  direction: rtl;
+  margin-bottom: 18px;
+}
+
+.newsletter-input-wrap {
+  flex: 1 1 320px;
+}
+
+.newsletter-input {
+  width: 100%;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.9rem 1.4rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.newsletter-input:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+/* زر اشترك الآن */
+.newsletter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 0.85rem 2.4rem;
+  border-radius: 999px;
+  border: none;
+
+  background: #8a9b6a;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+
+  box-shadow: 0 10px 25px rgba(84, 148, 93, 0.28);
+  transition: all 0.2s ease-in-out;
+}
+
+.newsletter-btn i {
+  font-size: 1rem;
+}
+
+.newsletter-btn:hover {
+  background: #89a05e;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(84, 148, 93, 0.35);
+}
+
+/* النص الصغير تحت */
+.newsletter-note {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 6px;
+}
+
+/* استجابة للموبايل */
+@media (max-width: 576px) {
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-btn {
+    width: 100%;
+  }
+}
+
+
+/* ========== صفحة تسجيل الدخول – ستايل بريق ========== */
+
+#account-login {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+/* الكرت الكبير اللي يحتوي على كل شيء */
+.bareq-login-wrapper {
+  background: #fff7ec;
+  border-radius: 24px;
+  border: 1px solid #f1e4d5;
+  padding: 32px 22px 38px;
+  box-shadow: 0 18px 40px rgba(171, 139, 107, 0.12);
+}
+
+@media (min-width: 992px) {
+  .bareq-login-wrapper {
+    padding: 40px 46px 44px;
+  }
+}
+
+/* رأس الصفحة */
+.bareq-login-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 0.4rem;
+}
+
+.bareq-login-subtitle {
+  font-size: 0.95rem;
+  color: #8b7a66;
+  margin: 0;
+}
+
+/* الكروت الداخلية */
+.bareq-login-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #f1e4d5;
+  padding: 22px 20px 24px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.03);
+}
+
+.bareq-login-card--main {
+  background: linear-gradient(
+    135deg,
+    #fffdf8 0%,
+    #fff7ec 45%,
+    #fff3e6 100%
+  );
+}
+
+.bareq-login-card--side {
+  background: #faf3e7;
+}
+
+.bareq-login-card .card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #3a3025;
+}
+
+.bareq-login-card .card-highlight {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #8a9b6a;
+  margin-bottom: 0.75rem;
+}
+
+.bareq-login-card .card-text {
+  font-size: 0.9rem;
+  color: #8b7a66;
+  margin-bottom: 1.1rem;
+}
+
+/* زر رئيسي بأسلوب بريق */
+.bareq-btn-main {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2.4rem;
+  border-radius: 999px;
+  background: #8a9b6a;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(84, 148, 93, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+
+.bareq-btn-main:hover,
+.bareq-btn-main:focus {
+  background: #89a05e;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(84, 148, 93, 0.32);
+}
+
+/* حق الحقول داخل الفورم */
+#account-login #form-login label {
+  font-size: 0.9rem;
+  color: #6e5b4a;
+  margin-bottom: 0.25rem;
+}
+
+#account-login #form-login .form-control {
+  border-radius: 999px;
+  border: 1px solid #e6d7c5;
+  background: #fffdf8;
+  padding: 0.75rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+#account-login #form-login .form-control:focus {
+  border-color: #8a9b6a;
+  box-shadow: 0 0 0 3px rgba(138, 155, 106, 0.2);
+}
+
+/* رابط "Forgotten Password" */
+#account-login .bareq-link-small {
+  font-size: 0.85rem;
+  color: #8a9b6a;
+}
+
+#account-login .bareq-link-small:hover {
+  color: #5f7245;
+}
+
+/* نخلي زر Login بشكل موحّد */
+#account-login #form-login .bareq-btn-main {
+  min-width: 160px;
+}
+
+/* تحسين شكل القائمة الجانبية */
+#account-login .list-group {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1e4d5;
+}
+
+#account-login .list-group-item {
+  border-color: #f1e4d5;
+  font-size: 0.9rem;
+  padding: 0.9rem 1.1rem;
+}
+
+#account-login .list-group-item.active,
+#account-login .list-group-item:hover {
+  background: #8a9b6a;
+  color: #ffffff;
+}
+
+/* ========== صفحة إنشاء حساب – بريق ========== */
+
+#account-register {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+/* نفس شكل الكرت الكبير حق اللوجين */
+#account-register .bareq-login-wrapper {
+  margin-top: 0;
+}
+
+/* حاوية الفيلدسات */
+#account-register .bareq-register-group {
+  border: 0;
+  padding: 0;
+  margin: 0 0 1.8rem 0;
+}
+
+/* عنوان كل مجموعة (Your Personal Details / Your Password / Newsletter) */
+#account-register .bareq-register-group .bareq-register-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 0.9rem;
+  padding: 0;
+  border: 0;
+}
+
+/* حقول النموذج – نفس ستايل صفحة اللوجين */
+#account-register #form-register label {
+  font-size: 0.9rem;
+  color: #6e5b4a;
+  margin-bottom: 0.25rem;
+}
+
+#account-register #form-register .form-control {
+  border-radius: 999px;
+  border: 1px solid #e6d7c5;
+  background: #fffdf8;
+  padding: 0.75rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+#account-register #form-register .form-control:focus {
+  border-color: #8a9b6a;
+  box-shadow: 0 0 0 3px rgba(138, 155, 106, 0.2);
+}
+
+/* تحسين شكل القائمة الجانبية هنا مثل صفحة اللوجين */
+#account-register .list-group {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1e4d5;
+}
+
+#account-register .list-group-item {
+  border-color: #f1e4d5;
+  font-size: 0.9rem;
+  padding: 0.9rem 1.1rem;
+}
+
+#account-register .list-group-item.active,
+#account-register .list-group-item:hover {
+  background: #8a9b6a;
+  color: #ffffff;
+}
+
+
+/* ========== صفحة نسيت كلمة المرور – بريق ========== */
+
+#account-forgotten {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+/* الكرت الكبير نفس باقي الصفحات */
+#account-forgotten .bareq-login-wrapper {
+  background: #fff7ec;
+  border-radius: 24px;
+  border: 1px solid #f1e4d5;
+  padding: 32px 22px 38px;
+  box-shadow: 0 18px 40px rgba(171, 139, 107, 0.12);
+}
+
+@media (min-width: 992px) {
+  #account-forgotten .bareq-login-wrapper {
+    padding: 40px 46px 44px;
+  }
+}
+
+/* الفيلدست والعنوان مثل صفحة التسجيل */
+#account-forgotten .bareq-register-group {
+  border: 0;
+  padding: 0;
+  margin: 0 0 1.8rem 0;
+}
+
+#account-forgotten .bareq-register-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 0.9rem;
+}
+
+/* الحقول */
+#account-forgotten #form-forgotten label {
+  font-size: 0.9rem;
+  color: #6e5b4a;
+  margin-bottom: 0.25rem;
+}
+
+#account-forgotten #form-forgotten .form-control {
+  border-radius: 999px;
+  border: 1px solid #e6d7c5;
+  background: #fffdf8;
+  padding: 0.75rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+#account-forgotten #form-forgotten .form-control:focus {
+  border-color: #8a9b6a;
+  box-shadow: 0 0 0 3px rgba(138, 155, 106, 0.2);
+}
+
+/* القائمة الجانبية نفس شكل الصفحات الثانية */
+#account-forgotten .list-group {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1e4d5;
+}
+
+#account-forgotten .list-group-item {
+  border-color: #f1e4d5;
+  font-size: 0.9rem;
+  padding: 0.9rem 1.1rem;
+}
+
+#account-forgotten .list-group-item.active,
+#account-forgotten .list-group-item:hover {
+  background: #8a9b6a;
+  color: #ffffff;
+}
+
+
+/* ========== صفحة حسابي – بريق ========== */
+
+#account-account {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+/* الكرت العام حول كل الأقسام */
+#account-account .bareq-account-wrapper {
+  background: #fff7ec;
+  border-radius: 24px;
+  border: 1px solid #f1e4d5;
+  padding: 32px 22px 38px;
+  box-shadow: 0 18px 40px rgba(171, 139, 107, 0.12);
+}
+
+@media (min-width: 992px) {
+  #account-account .bareq-account-wrapper {
+    padding: 40px 46px 44px;
+  }
+}
+
+/* شبكة الكروت */
+#account-account .bareq-account-grid {
+  margin-top: 8px;
+}
+
+/* الكرت الواحد */
+#account-account .bareq-account-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #f1e4d5;
+  padding: 20px 18px 18px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.03);
+  height: 100%;
+}
+
+/* عنوان كل قسم */
+#account-account .bareq-account-section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 0.9rem;
+}
+
+/* قائمة الروابط داخل الكرت */
+#account-account .bareq-account-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#account-account .bareq-account-list li + li {
+  margin-top: 0.45rem;
+}
+
+#account-account .bareq-account-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #7b6b59;
+  text-decoration: none;
+  transition: color 0.18s ease, transform 0.15s ease;
+}
+
+/* سهم صغير قبل الرابط */
+#account-account .bareq-account-list a::before {
+  content: "›";
+  font-size: 0.9rem;
+  color: #c3a782;
+}
+
+#account-account .bareq-account-list a:hover {
+  color: #3f5f3a;
+  transform: translateX(-2px);
+}
+
+/* تحسين القائمة الجانبية في هذه الصفحة أيضاً */
+#account-account .list-group {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1e4d5;
+}
+
+#account-account .list-group-item {
+  border-color: #f1e4d5;
+  font-size: 0.9rem;
+  padding: 0.9rem 1.1rem;
+}
+
+#account-account .list-group-item.active,
+#account-account .list-group-item:hover {
+  background: #8a9b6a;
+  color: #ffffff;
+}
+
+
+/* ========== صفحة تعديل الحساب – بريق ========== */
+
+#account-edit {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+/* نضبط عرض الكرت في الوسط */
+#account-edit .bareq-edit-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* رأس الصفحة */
+#account-edit .bareq-edit-header {
+  margin-bottom: 1.5rem;
+}
+
+/* عنوان القسم داخل الفورم */
+#account-edit .bareq-form-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3a3025;
+}
+
+/* لابل وحقول الفورم – نفس ستايل صفحة التسجيل */
+#account-edit #form-customer label {
+  font-size: 0.9rem;
+  color: #6e5b4a;
+  margin-bottom: 0.25rem;
+}
+
+#account-edit #form-customer .form-control,
+#account-edit #form-customer .form-select {
+  border-radius: 999px;
+  border: 1px solid #e6d7c5;
+  background: #fffdf8;
+  padding: 0.75rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+#account-edit #form-customer .form-control:focus,
+#account-edit #form-customer .form-select:focus {
+  border-color: #8a9b6a;
+  box-shadow: 0 0 0 3px rgba(138, 155, 106, 0.2);
+}
+
+/* الأزرار */
+.bareq-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2.1rem;
+  border-radius: 999px;
+  border: 1px solid #e0d0be;
+  background: #ffffff;
+  color: #7b6b59;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.bareq-btn-outline:hover {
+  background: #fdf6ec;
+  color: #3f5f3a;
+  border-color: #d2c0aa;
+}
+
+
+/* ========== صفحة تغيير كلمة المرور – بريق ========== */
+
+#account-password {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+/* نضبط عرض الكرت في الوسط */
+#account-password .bareq-password-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* عنوان القسم */
+#account-password .bareq-form-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #3a3025;
+}
+
+/* اللابل والحقول – نفس ستايل تسجيل/تعديل الحساب */
+#account-password #form-password label {
+  font-size: 0.9rem;
+  color: #6e5b4a;
+  margin-bottom: 0.25rem;
+}
+
+#account-password #form-password .form-control {
+  border-radius: 999px;
+  border: 1px solid #e6d7c5;
+  background: #fffdf8;
+  padding: 0.75rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+#account-password #form-password .form-control:focus {
+  border-color: #8a9b6a;
+  box-shadow: 0 0 0 3px rgba(138, 155, 106, 0.2);
+}
+
+/* نخلي زر المتابعة بنفس ستايل بريق الأساسي */
+#account-password #form-password .bareq-btn-main {
+  min-width: 160px;
+}
+
+
+/* ===== العمود الأيمن (column-right) – ستايل بريق عام ===== */
+
+#column-right {
+  margin-top: 10px;
+}
+
+/* حاوية الكروت */
+#column-right .bareq-side-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* الكرت الواحد */
+#column-right .bareq-side-card {
+  background: #fff7ec;
+  border-radius: 20px;
+  border: 1px solid #f1e4d5;
+  padding: 18px 16px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.04);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+/* العناوين داخل الموديول */
+#column-right .bareq-side-card h2,
+#column-right .bareq-side-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 0.75rem;
+}
+
+/* الروابط */
+#column-right .bareq-side-card a {
+  color: #6e5b4a;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+#column-right .bareq-side-card a:hover {
+  color: #3f5f3a;
+}
+
+/* الهوفر على الكرت كله */
+#column-right .bareq-side-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+  background: #fffaf3;
+}
+
+/* لو الموديول عبارة عن list-group (قائمة روابط) */
+#column-right .bareq-side-card .list-group {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #f1e4d5;
+}
+
+#column-right .bareq-side-card .list-group-item {
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+  border-color: #f1e4d5;
+}
+
+#column-right .bareq-side-card .list-group-item.active,
+#column-right .bareq-side-card .list-group-item:hover {
+  background: #8a9b6a;
+  color: #ffffff;
+}
+
+
+/* ===== صفحة طرق الدفع – Payment Methods ===== */
+
+#account-payment-method {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+/* الكرت الأساسي في الصفحة */
+#account-payment-method .bareq-payment-card {
+  margin-top: 6px;
+}
+
+/* رسالة "لا يوجد طرق دفع" أو الجداول داخل list */
+#account-payment-method .bareq-payment-list {
+  font-size: 0.95rem;
+  color: #8b7a66;
+}
+
+/* لو الـ list ترجع جدول */
+#account-payment-method .bareq-payment-list table,
+#account-payment-method .bareq-payment-list .table {
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #f1e4d5;
+  background: #ffffff;
+}
+
+#account-payment-method .bareq-payment-list th,
+#account-payment-method .bareq-payment-list td {
+  padding: 0.75rem 1rem;
+  border-color: #f1e4d5;
+  font-size: 0.9rem;
+}
+
+#account-payment-method .bareq-payment-list thead {
+  background: #fbf3e5;
+  color: #3a3025;
+  font-weight: 600;
+}
+
+/* ========== صفحة التنزيلات – Downloads ========== */
+#account-download {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+/* ========== صفحة الاشتراكات – Subscriptions ========== */
+#account-subscription {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+/* ========== صفحة نقاط المكافآت – Reward Points ========== */
+#account-reward {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+/* ========== صفحة النشرة البريدية – Newsletter – ستايل بريق ========== */
+
+#account-newsletter {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+/* نخلي محتوى الصفحة أضيق ومتمركز مثل باقي صفحات بريق */
+#account-newsletter #content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* عنوان الصفحة */
+#account-newsletter h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 0.6rem;
+}
+
+/* الفورم نفسه يكون داخل كرت ناعم */
+#account-newsletter #form-newsletter {
+  background: #fff7ec;
+  border-radius: 24px;
+  border: 1px solid #f1e4d5;
+  padding: 26px 22px 30px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* اللابل و النص */
+#account-newsletter #form-newsletter label {
+  font-size: 0.9rem;
+  color: #6e5b4a;
+  margin-bottom: 0.25rem;
+}
+
+/* تخطيط صف السويتش */
+#account-newsletter #form-newsletter .row.mb-3 {
+  align-items: center;
+}
+
+/* زر الاستمرار – نفس زر بريق الأخضر */
+#account-newsletter .btn-primary {
+  background: #8a9b6a;
+  border-color: #8a9b6a;
+  border-radius: 999px;
+  padding: 0.7rem 2.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(84, 148, 93, 0.25);
+  text-decoration: none;
+}
+
+#account-newsletter .btn-primary:hover,
+#account-newsletter .btn-primary:focus {
+  background: #7c8e5f;
+  border-color: #7c8e5f;
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(84, 148, 93, 0.32);
+}
+
+/* زر الرجوع – نفس ستايل bareq-btn-outline */
+#account-newsletter .btn-light {
+  border-radius: 999px;
+  border: 1px solid #e0d0be;
+  background: #ffffff;
+  color: #7b6b59;
+  padding: 0.7rem 2.1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#account-newsletter .btn-light:hover {
+  background: #fdf6ec;
+  color: #3f5f3a;
+  border-color: #d2c0aa;
+}
+
+/* في الشاشات الصغيرة نخلي الكروت والأزرار تحت بعض */
+@media (max-width: 575.98px) {
+  #account-newsletter #content {
+    max-width: 100%;
+  }
+
+  #account-newsletter #form-newsletter {
+    padding-inline: 18px;
+  }
+
+  #account-newsletter .row > .col {
+    margin-bottom: 0.6rem;
+  }
+
+  #account-newsletter .row > .col.text-end {
+    text-align: left !important;
+  }
+}
+
+
+/* ========== صفحة اتصل بنا – Contact Us – ستايل بريق ========== */
+
+#information-contact {
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+#information-contact #content {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+/* عنوان الصفحة */
+#information-contact #content > h1 {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 0.5rem;
+}
+
+/* عنوان "Our Locations" وغيره */
+#information-contact h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #8b7a66;
+  margin-bottom: 1rem;
+}
+
+/* الكرت اللي فيه بيانات المتجر */
+#information-contact .card {
+  background: #fff7ec;
+  border-radius: 22px;
+  border: 1px solid #f1e4d5;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.04);
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+#information-contact .card .card-body {
+  padding: 20px 22px;
+}
+
+/* نموذج التواصل */
+#information-contact #form-contact {
+  background: #fff7ec;
+  border-radius: 22px;
+  border: 1px solid #f1e4d5;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.04);
+  padding: 24px 22px 30px;
+}
+
+/* عنوان النموذج */
+#information-contact #form-contact legend {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #3a3025;
+  margin-bottom: 1rem;
+}
+
+/* اللابل والحقول */
+#information-contact #form-contact label {
+  font-size: 0.9rem;
+  color: #6e5b4a;
+  margin-bottom: 0.25rem;
+}
+
+#information-contact #form-contact .form-control {
+  border-radius: 999px;
+  border: 1px solid #e6d7c5;
+  background: #fffdf8;
+  padding: 0.75rem 1.1rem;
+  font-size: 0.9rem;
+}
+
+#information-contact #form-contact textarea.form-control {
+  border-radius: 18px;
+  min-height: 180px;
+}
+
+/* فوكس الحقول */
+#information-contact #form-contact .form-control:focus {
+  border-color: #8a9b6a;
+  box-shadow: 0 0 0 3px rgba(138, 155, 106, 0.2);
+}
+
+/* زر الإرسال – نفس زر بريق */
+#information-contact .btn-primary {
+  background: #8a9b6a;
+  border-color: #8a9b6a;
+  border-radius: 999px;
+  padding: 0.7rem 2.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(84, 148, 93, 0.25);
+  text-decoration: none;
+}
+
+#information-contact .btn-primary:hover,
+#information-contact .btn-primary:focus {
+  background: #7c8e5f;
+  border-color: #7c8e5f;
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(84, 148, 93, 0.32);
+}
+
+/* أزرار خريطة جوجل */
+#information-contact .btn-info,
+#information-contact .btn-outline-secondary {
+  border-radius: 999px;
+  padding: 0.5rem 1.6rem;
+  font-size: 0.85rem;
+}
+
+/* تحسين العرض على الموبايل */
+@media (max-width: 575.98px) {
+  #information-contact #form-contact {
+    padding-inline: 16px;
+  }
+
+  #information-contact #form-contact .row .col-sm-2,
+  #information-contact #form-contact .row .col-sm-10 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #information-contact #form-contact label {
+    margin-bottom: 0.35rem;
+  }
+}

@@ -1,0 +1,293 @@
+{{ header }}
+<div id="account-order" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+      <li class="breadcrumb-item">
+        <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="row">
+    {{ column_left }}
+
+    <div id="content" class="col">
+      {{ content_top }}
+
+      <div class="bareq-login-wrapper">
+
+        {# عنوان الصفحة #}
+        <div class="mb-4">
+          <h1 class="bareq-login-title mb-1">{{ text_my_orders ?: heading_title }}</h1>
+          <p class="bareq-login-subtitle">
+            {{ text_order_detail ?: 'Review your order details, addresses and history in one place.' }}
+          </p>
+        </div>
+
+        {# صف رقم الفاتورة ورقم الطلب #}
+        <div class="row g-3 mb-3">
+          <div class="col-md-6">
+            <div class="bareq-login-card bareq-login-card--side h-100">
+              <div class="card-title mb-1">{{ text_invoice_no }}</div>
+              <div class="card-highlight">
+                {% if invoice_no %}{{ invoice_no }}{% else %}{{ text_tbc }}{% endif %}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="bareq-login-card bareq-login-card--side h-100">
+              <div class="card-title mb-1">{{ text_order_id }}</div>
+              <div class="card-highlight">#{{ order_id }}</div>
+            </div>
+          </div>
+        </div>
+
+        {# عناوين الدفع والشحن #}
+        {% if payment_address or shipping_address %}
+          <div class="row g-3 mb-3">
+            {% if payment_address %}
+              <div class="col-md-6">
+                <div class="bareq-login-card bareq-login-card--side h-100">
+                  <div class="card-title mb-1">{{ text_payment_address }}</div>
+                  <div class="card-text">{{ payment_address }}</div>
+                </div>
+              </div>
+            {% endif %}
+
+            {% if shipping_address %}
+              <div class="col-md-6">
+                <div class="bareq-login-card bareq-login-card--side h-100">
+                  <div class="card-title mb-1">{{ text_shipping_address }}</div>
+                  <div class="card-text">{{ shipping_address }}</div>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {# طرق الدفع والشحن #}
+        <div class="row g-3 mb-4">
+          {% if shipping_method %}
+            <div class="col-md-6">
+              <div class="bareq-login-card bareq-login-card--side h-100">
+                <div class="card-title mb-1">{{ text_shipping_method }}</div>
+                <div class="card-text">{{ shipping_method }}</div>
+              </div>
+            </div>
+          {% endif %}
+
+          <div class="col-md-6">
+            <div class="bareq-login-card bareq-login-card--side h-100">
+              <div class="card-title mb-1">{{ text_payment_method }}</div>
+              <div class="card-text">{{ payment_method }}</div>
+            </div>
+          </div>
+        </div>
+
+        {# جدول المنتجات #}
+        <div class="bareq-login-card bareq-login-card--main mb-4">
+          <div class="card-title mb-3">{{ heading_title }}</div>
+
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle mb-0">
+              <thead>
+                <tr>
+                  <th>{{ column_product }}</th>
+                  <th class="text-end">{{ column_quantity }}</th>
+                  <th class="text-end">{{ column_price }}</th>
+                  <th class="text-end">{{ column_total }}</th>
+                  <th class="text-end">{{ column_action }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% set product_row = 0 %}
+                {% for product in products %}
+                  <tr id="product-row-{{ product_row }}">
+                    <td>
+                      <a href="{{ product.view }}">{{ product.name }}</a>
+                      <div id="error-{{ product_row }}-product" class="invalid-feedback mt-0"></div>
+
+                      <ul class="list-unstyled mb-0 mt-1">
+                        <li>
+                          <small> - {{ text_model }}: {{ product.model }}</small>
+                        </li>
+                        {% for option in product.option %}
+                          <li>
+                            <small> - {{ option.name }}: {{ option.value }}</small>
+                            <div id="error-{{ product_row }}-option-{{ option.product_option_id }}" class="invalid-feedback mt-0"></div>
+                          </li>
+                        {% endfor %}
+                        {% if product.subscription %}
+                          <li>
+                            <small>
+                              - {{ text_subscription }}:
+                              {% if product.subscription %}
+                                <a href="{{ product.subscription }}" target="_blank">{{ product.subscription_plan }}</a>
+                              {% else %}
+                                {{ product.subscription_plan }}
+                              {% endif %}
+                            </small>
+                            <div id="error-{{ product_row }}-subscription" class="invalid-feedback mt-0"></div>
+                          </li>
+                        {% endif %}
+                        {% if product.reward %}
+                          <li>
+                            <small> - {{ text_points }}: {{ product.reward }}</small>
+                          </li>
+                        {% endif %}
+                      </ul>
+
+                      {# نموذج إعادة الطلب #}
+                      <form id="form-product-{{ product_row }}">
+                        <input type="hidden" name="product_id" value="{{ product.product_id }}"/>
+                        <input type="hidden" name="quantity" value="{{ product.quantity }}"/>
+
+                        {% for option in product.option %}
+                          {% if option.type == 'select' or option.type == 'radio' %}
+                            <input type="hidden" name="option[{{ option.product_option_id }}]" value="{{ option.product_option_value_id }}"/>
+                          {% endif %}
+                          {% if option.type == 'checkbox' %}
+                            <input type="hidden" name="option[{{ option.product_option_id }}][]" value="{{ option.product_option_value_id }}"/>
+                          {% endif %}
+                          {% if option.type == 'text' or option.type == 'textarea' or option.type == 'file' or option.type == 'date' or option.type == 'datetime' or option.type == 'time' %}
+                            <input type="hidden" name="option[{{ option.product_option_id }}]" value="{{ option.value }}"/>
+                          {% endif %}
+                        {% endfor %}
+
+                        <input type="hidden" name="subscription_plan_id" value="{{ product.subscription_plan_id }}"/>
+                      </form>
+                    </td>
+
+                    <td class="text-end">{{ product.quantity }}</td>
+                    <td class="text-end">
+                      <x-currency code="{{ currency_code }}" amount="{{ product.price }}" value="{{ currency_value }}"></x-currency>
+                    </td>
+                    <td class="text-end">
+                      <x-currency code="{{ currency_code }}" amount="{{ product.total }}" value="{{ currency_value }}"></x-currency>
+                    </td>
+                    <td class="text-end text-nowrap" style="width:1px;">
+                      <div class="d-grid gap-1">
+                        <button type="submit" form="form-product-{{ product_row }}" class="bareq-btn-main mb-1">
+                          {{ button_reorder }}
+                        </button>
+                        <a href="{{ product.return }}" class="btn btn-danger btn-sm">
+                          {{ button_return }}
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  {% set product_row = product_row + 1 %}
+                {% endfor %}
+
+                {% for total in totals %}
+                  <tr>
+                    <td colspan="2"></td>
+                    <td class="text-end"><strong>{{ total.title }}</strong></td>
+                    <td class="text-end">
+                      <x-currency code="{{ currency_code }}" amount="{{ total.value }}" value="{{ currency_value }}"></x-currency>
+                    </td>
+                    <td></td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {# تعليق الطلب إن وجد #}
+        {% if comment %}
+          <div class="bareq-login-card bareq-login-card--side mb-4">
+            <div class="card-title mb-1">{{ text_comment }}</div>
+            <div class="card-text">{{ comment }}</div>
+          </div>
+        {% endif %}
+
+        {# سجل حالة الطلب #}
+        <div class="bareq-login-card bareq-login-card--side mb-4">
+          <div class="card-title mb-2">{{ text_history }}</div>
+          <div id="history">{{ history }}</div>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <a href="{{ continue }}" class="bareq-btn-main">
+            {{ button_continue }}
+          </a>
+        </div>
+
+      </div> {# /bareq-login-wrapper #}
+
+      {{ content_bottom }}
+    </div>
+
+    {{ column_right }}
+  </div>
+</div>
+
+<script type="text/javascript"><!--
+var product_row = 0;
+
+$('form').on('submit', function(e) {
+    e.preventDefault();
+
+    var element = this;
+
+    if (e.originalEvent !== undefined && e.originalEvent.submitter !== undefined) {
+        var button = e.originalEvent.submitter;
+    } else {
+        var button = '';
+    }
+
+    $.ajax({
+        url: 'index.php?route=checkout/cart.add&language={{ language }}',
+        type: 'post',
+        data: $(element).serialize(),
+        dataType: 'json',
+        cache: false,
+        processData: false,
+        beforeSend: function() {
+            $(button).button('loading');
+        },
+        complete: function() {
+            $(button).button('reset');
+        },
+        success: function(json) {
+            console.log(json);
+
+            $('form').find('.invalid-feedback').removeClass('d-block');
+
+            if (json['error']) {
+                $('#alert').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> {{ error_reorder }} <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+
+                product_row = $(element).attr('id').substr(13);
+
+                if (json['error']['warning']) {
+                    $('#alert').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['error']['warning'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+
+                    delete json['error']['warning'];
+                }
+
+                for (key in json['error']) {
+                    $('#error-' + product_row + '-' + key.replaceAll('_', '-')).html(json['error'][key]).addClass('d-block');
+                }
+            }
+
+            if (json['success']) {
+                $('#alert').prepend('<div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-check"></i> ' + json['success'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+
+                $('#cart').load('index.php?route=common/cart.info&language={{ language }}');
+            }
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+    });
+});
+
+$('#history').on('click', '.pagination a', function(e) {
+    e.preventDefault();
+
+    $('#history').load(this.href);
+});
+//--></script>
+{{ footer }}

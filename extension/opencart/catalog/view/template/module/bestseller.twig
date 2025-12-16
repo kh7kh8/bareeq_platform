@@ -1,0 +1,6 @@
+<h3>{{ heading_title }}</h3>  {# عنوان القسم #}
+<div class="row{% if axis == 'horizontal' %} row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4{% endif %}">  {# تخطيط الشبكة للمنتجات #}
+  {% for product in products %}  {# تكرار عبر المنتجات المعروضة #}
+    <div class="col mb-3">{{ product }}</div>  {# عرض كل منتج في عمود مع هامش سفلي #}
+  {% endfor %}
+</div>

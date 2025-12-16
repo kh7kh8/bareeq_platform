@@ -1,0 +1,122 @@
+2025-07-05 16:32:17 - Class "ZipArchive" not found in C:\xampp\htdocs\opencart\admin\controller\marketplace\installer.php on line 99
+2025-10-18 16:20:18 - setcookie(): "path" option cannot contain ",", ";", " ", "\t", "\r", "\n", "\013", or "\014" in C:\xampp\htdocs\opencart\catalog\controller\startup\session.php on line 73
+2025-10-18 16:20:41 - setcookie(): "path" option cannot contain ",", ";", " ", "\t", "\r", "\n", "\013", or "\014" in C:\xampp\htdocs\opencart\catalog\controller\startup\session.php on line 73
+2025-10-18 16:21:15 - setcookie(): "path" option cannot contain ",", ";", " ", "\t", "\r", "\n", "\013", or "\014" in C:\xampp\htdocs\opencart\catalog\controller\startup\session.php on line 73
+2025-10-18 16:50:49 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-10-18 16:50:50 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-10-18 17:00:13 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-10-18 17:01:04 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-10-18 17:01:06 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-10-18 17:31:38 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-10-18 17:52:26 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-10-18 17:52:33 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-01 15:43:02 - setcookie(): "path" option cannot contain ",", ";", " ", "\t", "\r", "\n", "\013", or "\014" in C:\xampp\htdocs\opencart\catalog\controller\startup\session.php on line 73
+2025-11-11 19:02:51 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-11 19:02:55 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-11 19:03:06 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-14 16:32:26 - Class "Controller" not found in C:\xampp\htdocs\opencart\catalog\controller\common\home.php on line 2
+2025-11-14 16:33:50 - Class "Opencart\Catalog\Controller\Common\Controller" not found in C:\xampp\htdocs\opencart\catalog\controller\common\home.php on line 39
+2025-11-14 16:34:40 - Failed to write cache file "C:/xampp/htdocs/opencart/system/storage/cache/template/ad/ad5fad1fac30189bda7f312eeb3696aa.php". in C:\xampp\htdocs\opencart\system\storage\vendor\twig\twig\src\Cache\FilesystemCache.php on line 76
+2025-11-14 16:35:31 - Class "Opencart\Catalog\Controller\Common\Controller" not found in C:\xampp\htdocs\opencart\catalog\controller\common\home.php on line 39
+2025-11-14 16:35:34 - Class "Opencart\Catalog\Controller\Common\Controller" not found in C:\xampp\htdocs\opencart\catalog\controller\common\home.php on line 39
+2025-11-14 16:35:52 - Class "Opencart\Catalog\Controller\Common\Controller" not found in C:\xampp\htdocs\opencart\catalog\controller\common\home.php on line 39
+2025-11-14 16:37:44 - Undefined array key "start" in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 246
+2025-11-14 16:37:45 - Undefined array key "start" in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 246
+2025-11-14 16:37:46 - Undefined array key "start" in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 246
+2025-11-14 16:37:46 - Undefined array key "start" in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 246
+2025-11-14 16:37:47 - Undefined array key "start" in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 246
+2025-11-14 16:41:31 - Undefined array key "start" in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 251
+2025-11-14 16:42:11 - Error: Could not call registry key model_tool_image! in C:\xampp\htdocs\opencart\system\engine\controller.php on line 43
+2025-11-14 16:45:17 - Undefined array key "start" in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 251
+2025-11-14 16:46:36 - Error: Could not call registry key model_tool_image! in C:\xampp\htdocs\opencart\system\engine\controller.php on line 43
+2025-11-15 20:37:28 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-15 20:37:29 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-15 20:37:32 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-15 20:37:33 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-15 20:37:39 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-16 17:53:52 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-16 17:53:58 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-16 18:03:47 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-16 18:03:55 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-17 17:08:35 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-17 18:00:43 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-17 18:12:51 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-17 18:13:02 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-17 18:14:13 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-18 17:33:39 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-19 10:54:07 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-19 13:52:10 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 13:55:11 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 13:55:13 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 13:55:14 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 13:55:15 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 13:55:16 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 13:55:46 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 13:55:48 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 13:55:49 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 13:55:49 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 13:55:50 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 13:56:31 - Error: Could not load model catalog/store! in C:\xampp\htdocs\opencart\system\engine\loader.php on line 148
+2025-11-19 17:40:51 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-19 17:40:57 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-25 06:03:18 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:05:26 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:05:27 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:05:45 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:06:53 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:06:54 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:06:55 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:06:55 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:06:55 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:07:02 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-25 06:07:11 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:07:12 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:10:06 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:12:58 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:13:02 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:21:41 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:28:21 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:28:22 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:28:23 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:29:38 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 06:29:39 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 07:45:02 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 07:52:31 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 07:52:32 - Undefined array key "ar-ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 07:53:52 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 07:53:54 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 07:54:26 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 07:54:28 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 07:54:28 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 07:54:29 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 07:58:25 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 08:00:20 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 08:00:21 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 08:00:21 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 08:00:21 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 08:00:22 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 08:00:22 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 08:00:23 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 08:00:23 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 08:00:23 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 08:01:00 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-25 08:01:01 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-26 06:54:26 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-26 07:07:20 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-11-26 07:35:58 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-26 07:36:25 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 40
+2025-11-26 07:46:03 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 42
+2025-11-26 07:46:05 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 42
+2025-11-26 07:46:06 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 42
+2025-11-26 07:46:06 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 42
+2025-11-26 07:46:24 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 42
+2025-11-26 07:46:25 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 42
+2025-11-26 07:46:25 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 42
+2025-11-26 07:47:12 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 41
+2025-11-26 07:47:13 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 41
+2025-11-27 19:27:05 - Undefined array key "ar" in C:\xampp\htdocs\opencart\catalog\controller\startup\language.php on line 41
+2025-12-02 08:19:08 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-12-02 10:50:53 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\opencart\admin\controller\common\developer.php on line 72
+2025-12-03 06:12:48 - syntax error, unexpected string content "البريد الإلكترو_..." in C:\xampp\htdocs\opencart\admin\language\ar-ar\setting\store.php on line 119
+2025-12-03 06:12:52 - syntax error, unexpected string content "البريد الإلكترو_..." in C:\xampp\htdocs\opencart\admin\language\ar-ar\setting\store.php on line 119
+2025-12-06 15:43:56 - Error: Could not load template account/payment_method! in C:\xampp\htdocs\opencart\system\library\template\twig.php on line 121

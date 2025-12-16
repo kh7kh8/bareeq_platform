@@ -1,0 +1,11 @@
+{% if modules %}
+<aside id="column-right" class="col-md-4 col-lg-3 d-none d-md-block">
+  <div class="bareq-side-panel">
+    {% for module in modules %}
+      <div class="bareq-side-card">
+        {{ module }}
+      </div>
+    {% endfor %}
+  </div>
+</aside>
+{% endif %}

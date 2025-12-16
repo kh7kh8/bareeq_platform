@@ -1,0 +1,83 @@
+{{ header }}
+<div id="account-wishlist" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+      <li class="breadcrumb-item">
+        <a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="row">
+    {{ column_left }}
+
+    <div id="content" class="col">
+      {{ content_top }}
+
+      <div class="bareq-login-wrapper">
+
+        {# العنوان والوصف #}
+        <div class="mb-4">
+          <h1 class="bareq-login-title mb-1">{{ heading_title }}</h1>
+          <p class="bareq-login-subtitle">
+            Keep track of your favourite products in one place.
+          </p>
+        </div>
+
+        {# كرت قائمة الأمنيات #}
+        <div class="bareq-login-card bareq-login-card--main">
+          <div id="wishlist">
+            {{ list }}
+          </div>
+
+          <div class="d-flex justify-content-end mt-3">
+            <a href="{{ continue }}" class="bareq-btn-main">
+              {{ button_continue }}
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      {{ content_bottom }}
+    </div>
+
+    {{ column_right }}
+  </div>
+</div>
+
+<script type="text/javascript"><!--
+$('#wishlist').on('click', '.btn-danger', function(e) {
+    e.preventDefault();
+
+    var element = this;
+
+    $.ajax({
+        url: $(element).attr('href'),
+        dataType: 'json',
+        beforeSend: function() {
+            $(element).button('loading');
+        },
+        complete: function() {
+            $(element).button('reset');
+        },
+        success: function(json) {
+            console.log(json);
+
+            if (json['error']) {
+                $('#alert').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['error'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+            }
+
+            if (json['success']) {
+                $('#alert').prepend('<div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['success'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+
+                $('#wishlist').load('index.php?route=account/wishlist.list&language={{ language }}');
+            }
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+    });
+});
+//--></script>
+{{ footer }}

@@ -1,0 +1,35 @@
+<?php
+// Texte
+$_['text_subject']               = '%s - الطلب %s';
+$_['text_greeting']              = 'شكراً لاهتمامك بمنتجات %s. تم استلام طلبك وسيتم معالجته بمجرد تأكيد الدفع.';
+$_['text_link']                  = 'لمراجعة طلبك، انقر على الرابط أدناه:';
+$_['text_order_detail']          = 'تفاصيل الطلب';
+$_['text_instruction']           = 'تعليمات';
+$_['text_order_id']              = 'رقم الطلب:';
+$_['text_date_added']            = 'تاريخ الطلب:';
+$_['text_order_status']          = 'حالة الطلب:';
+$_['text_payment_method']        = 'طريقة الدفع:';
+$_['text_shipping_method']       = 'طريقة الشحن:';
+$_['text_email']                 = 'البريد الإلكتروني:';
+$_['text_telephone']             = 'الهاتف:';
+$_['text_ip']                    = 'عنوان IP:';
+$_['text_payment_address']       = 'عنوان الفواتير';
+$_['text_shipping_address']      = 'عنوان الشحن';
+$_['text_products']              = 'المنتجات';
+$_['text_product']               = 'المنتج';
+$_['text_model']                 = 'الموديل';
+$_['text_quantity']              = 'الكمية';
+$_['text_price']                 = 'السعر';
+$_['text_order_total']           = 'إجماليات الطلب';
+$_['text_total']                 = 'الإجمالي';
+$_['text_subscription']          = 'اشتراك';
+$_['text_subscription_duration'] = '%s كل %d %s لعدد %d دفعة';
+$_['text_subscription_cancel']   = '%s كل %d %s حتى الإلغاء';
+$_['text_day']                   = 'يوم';
+$_['text_week']                  = 'أسبوع';
+$_['text_semi_month']            = 'نصف شهر';
+$_['text_month']                 = 'شهر';
+$_['text_year']                  = 'سنة';
+$_['text_download']              = 'بعد تأكيد الدفع، يمكنك النقر على الرابط أدناه للوصول إلى منتجاتك القابلة للتحميل:';
+$_['text_comment']               = 'التعليقات الخاصة بطلبك هي:';
+$_['text_footer']                = 'يرجى الرد على هذا البريد الإلكتروني إذا كان لديك أي استفسارات.';

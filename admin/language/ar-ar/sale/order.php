@@ -1,0 +1,136 @@
+<?php
+// العنوان
+$_['heading_title']              = 'الطلبات';
+
+// النصوص
+$_['text_success']               = 'تم بنجاح: لقد قمت بتعديل الطلبات!';
+$_['text_list']                  = 'قائمة الطلبات';
+$_['text_add']                   = 'إضافة طلب';
+$_['text_edit']                  = 'طلب (#%s)';
+$_['text_filter']                = 'تصفية';
+$_['text_store']                 = 'المتجر';
+$_['text_date_added']            = 'تاريخ الإضافة';
+$_['text_customer']              = 'العميل';
+$_['text_product_add']           = 'إضافة منتج';
+$_['text_model']                 = 'الطراز';
+$_['text_reward']                = 'نقاط المكافآت';
+$_['text_points']                = 'النقاط';
+$_['text_reward_add']            = 'تم بنجاح: تم إضافة نقاط المكافآت!';
+$_['text_reward_remove']         = 'تم بنجاح: تم إزالة نقاط المكافآت!';
+$_['text_affiliate']             = 'الشريك';
+$_['text_commission']            = 'العمولة';
+$_['text_commission_add']        = 'تم بنجاح: تم إضافة العمولة!';
+$_['text_commission_remove']     = 'تم بنجاح: تم إزالة العمولة!';
+$_['text_upload']                = 'تم رفع الملف بنجاح!';
+$_['text_subscription']          = 'الاشتراك';
+$_['text_subscription_trial']    = '%s كل %d %s(s) لمدة %d دفعة(s)، ثم ';
+$_['text_subscription_duration'] = '%s كل %d %s(s) لمدة %d دفعة(s)';
+$_['text_subscription_cancel']   = '%s كل %d %s(s) حتى الإلغاء';
+$_['text_day']                   = 'يوم';
+$_['text_week']                  = 'أسبوع';
+$_['text_semi_month']            = 'نصف شهر';
+$_['text_month']                 = 'شهر';
+$_['text_year']                  = 'سنة';
+$_['text_more']                  = 'المزيد..';
+$_['text_less']                  = 'أقل..';
+$_['text_payment_address']       = 'عنوان الفواتير';
+$_['text_payment_method']        = 'طريقة الدفع';
+$_['text_payment']               = 'يرجى اختيار طريقة الدفع المفضلة لهذا الطلب.';
+$_['text_shipping_address']      = 'عنوان الشحن';
+$_['text_shipping_method']       = 'طريقة الشحن';
+$_['text_shipping']              = 'يرجى اختيار طريقة الشحن المفضلة لهذا الطلب.';
+$_['text_comment']               = 'تعليق';
+$_['text_history']               = 'السجل';
+$_['text_history_add']           = 'إضافة إلى السجل';
+$_['text_browser']               = 'المتصفح';
+$_['text_ip']                    = 'عنوان IP';
+$_['text_forwarded_ip']          = 'IP محول';
+$_['text_user_agent']            = 'وكيل المستخدم';
+$_['text_accept_language']       = 'اللغة المقبولة';
+$_['text_order_id']              = 'رقم الطلب';
+$_['text_website']               = 'الموقع';
+$_['text_invoice']               = 'فاتورة';
+$_['text_invoice_no']            = 'رقم الفاتورة';
+$_['text_tbc']                   = 'قيد التأكيد';
+$_['text_store_address']         = 'عنوان المتجر';
+$_['text_store_telephone']       = 'هاتف المتجر';
+$_['text_store_email']           = 'البريد الإلكتروني للمتجر';
+$_['text_customer_email']        = 'البريد الإلكتروني للعميل';
+$_['text_customer_telephone']    = 'هاتف العميل';
+$_['text_missing']               = 'طلبات مفقودة';
+$_['text_default']               = 'افتراضي';
+$_['text_picklist']              = 'مذكرة شحن';
+$_['text_sku']                   = 'SKU';
+$_['text_upc']                   = 'UPC';
+$_['text_ean']                   = 'EAN';
+$_['text_jan']                   = 'JAN';
+$_['text_isbn']                  = 'ISBN';
+$_['text_mpn']                   = 'MPN';
+
+// الأعمدة
+$_['column_order_id']            = 'رقم الطلب';
+$_['column_customer']            = 'العميل';
+$_['column_store']               = 'المتجر';
+$_['column_status']              = 'الحالة';
+$_['column_date_added']          = 'تاريخ الإضافة';
+$_['column_date_modified']       = 'تاريخ التعديل';
+$_['column_total']               = 'الإجمالي';
+$_['column_product']             = 'المنتج';
+$_['column_model']               = 'الطراز';
+$_['column_quantity']            = 'الكمية';
+$_['column_price']               = 'سعر الوحدة';
+$_['column_comment']             = 'تعليق';
+$_['column_notify']              = 'تم إشعار العميل';
+$_['column_location']            = 'الموقع';
+$_['column_reference']           = 'المرجع';
+$_['column_weight']              = 'وزن المنتج';
+$_['column_action']              = 'إجراء';
+
+// الإدخالات
+$_['entry_store']                = 'المتجر';
+$_['entry_customer']             = 'العميل';
+$_['entry_customer_group']       = 'مجموعة العملاء';
+$_['entry_firstname']            = 'الاسم الأول';
+$_['entry_lastname']             = 'اسم العائلة';
+$_['entry_email']                = 'البريد الإلكتروني';
+$_['entry_telephone']            = 'الهاتف';
+$_['entry_address']              = 'اختر عنوان';
+$_['entry_company']              = 'الشركة';
+$_['entry_address_1']            = 'العنوان 1';
+$_['entry_address_2']            = 'العنوان 2';
+$_['entry_city']                 = 'المدينة';
+$_['entry_postcode']             = 'الرمز البريدي';
+$_['entry_country']              = 'الدولة';
+$_['entry_zone']                 = 'المقاطعة / الولاية';
+$_['entry_product']              = 'اختر المنتج';
+$_['entry_option']               = 'اختر خيار/خيارات';
+$_['entry_subscription']         = 'اختر الاشتراك';
+$_['entry_quantity']             = 'الكمية';
+$_['entry_order_status']         = 'حالة الطلب';
+$_['entry_notify']               = 'إشعار العميل';
+$_['entry_shipping_method']      = 'طريقة الشحن';
+$_['entry_payment_method']       = 'طريقة الدفع';
+$_['entry_override']             = 'تجاوز';
+$_['entry_comment']              = 'تعليق';
+$_['entry_language']             = 'اللغة';
+$_['entry_currency']             = 'العملة';
+$_['entry_affiliate']            = 'الشريك';
+$_['entry_order_id']             = 'رقم الطلب';
+$_['entry_total']                = 'الإجمالي';
+$_['entry_date_from']            = 'تاريخ البداية';
+$_['entry_date_to']              = 'تاريخ النهاية';
+$_['entry_date_modified_from']   = 'تاريخ التعديل من';
+$_['entry_date_modified_to']     = 'تاريخ التعديل إلى';
+
+// المساعدة
+$_['help_override']              = 'إذا تم حظر طلب العميل من تغيير حالة الطلب بسبب إضافة مكافحة الاحتيال، قم بتمكين التجاوز.';
+
+// الأخطاء
+$_['error_warning']              = 'تحذير: يرجى مراجعة النموذج بعناية للأخطاء!';
+$_['error_permission']           = 'تحذير: ليس لديك إذن لتعديل الطلبات!';
+$_['error_invoice_no']           = 'تحذير: تم إنشاء رقم الفاتورة مسبقًا!';
+$_['error_order']                = 'تحذير: الطلب غير موجود!';
+$_['error_affiliate']            = 'تحذير: الشريك غير موجود!';
+$_['error_reward_add']           = 'تحذير: تم بالفعل إضافة نقاط المكافآت لهذا الطلب!';
+$_['error_reward_guest']         = 'تحذير: الضيوف لا يمكنهم استخدام نقاط المكافآت!';
+$_['error_commission_add']       = 'تحذير: تم بالفعل إضافة عمولة الشريك لهذا الطلب!';

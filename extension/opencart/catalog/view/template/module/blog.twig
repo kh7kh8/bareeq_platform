@@ -1,0 +1,18 @@
+<h3>{{ heading_title }}</h3>  {# عنوان القسم #}
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-3">  {# تخطيط الشبكة للمدونات #}
+  {% for blog in blogs %}  {# تكرار عبر المدونات المعروضة #}
+    <div class="col mb-4">        {# عمود لكل مدونة مع هامش سفلي #}
+      <div class="product-thumb"> {# حاوية معاينة المدونة #}
+        <div class="image">    {# قسم الصورة #}
+          <a href="{{ blog.href }}"><img src="{{ blog.thumb }}" alt="{{ blog.name }}" title="{{ blog.name }}" class="img-fluid"/></a>  {# صورة المدونة مع رابط #}
+        </div>
+        <div class="content">  {# قسم المحتوى #}
+          <div class="description"> {# وصف المدونة #}
+            <h4><a href="{{ blog.href }}">{{ blog.name }}</a></h4>  {# عنوان المدونة مع رابط #}
+            <p>{{ blog.description }}</p> {# وصف مختصر للمدونة #}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

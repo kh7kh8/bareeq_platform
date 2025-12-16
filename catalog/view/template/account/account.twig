@@ -1,0 +1,100 @@
+{{ header }}
+<div id="account-account" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+      <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+
+  {% if success %}
+    <div class="alert alert-success alert-dismissible">
+      <i class="fa-solid fa-circle-check"></i> {{ success }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+  {% endif %}
+
+  <div class="row">
+    {{ column_left }}
+
+    <div id="content" class="col">
+      {{ content_top }}
+
+      <div class="bareq-login-wrapper bareq-account-wrapper">
+        <!-- رأس الصفحة -->
+        <div class="bareq-login-header text-center mb-4">
+          <h1 class="bareq-login-title">{{ text_my_account }}</h1>
+          <p class="bareq-login-subtitle">
+            Manage your personal details, orders and newsletter preferences in one place.
+          </p>
+        </div>
+
+        <div class="row g-3 g-lg-4 bareq-account-grid">
+
+          <!-- كرت: حسابي -->
+          <div class="col-md-6 col-xl-4">
+            <div class="bareq-login-card bareq-account-card">
+              <h2 class="bareq-account-section-title">{{ text_my_account }}</h2>
+              <ul class="bareq-account-list">
+                <li><a href="{{ edit }}">{{ text_edit }}</a></li>
+                <li><a href="{{ password }}">{{ text_password }}</a></li>
+                <li><a href="{{ payment_method }}">{{ text_payment_method }}</a></li>
+                <li><a href="{{ address }}">{{ text_address }}</a></li>
+                <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- كرت: طلباتي -->
+          <div class="col-md-6 col-xl-4">
+            <div class="bareq-login-card bareq-account-card">
+              <h2 class="bareq-account-section-title">{{ text_my_orders }}</h2>
+              <ul class="bareq-account-list">
+                <li><a href="{{ order }}">{{ text_order }}</a></li>
+                <li><a href="{{ subscription }}">{{ text_subscription }}</a></li>
+                <li><a href="{{ download }}">{{ text_download }}</a></li>
+                {% if reward %}
+                  <li><a href="{{ reward }}">{{ text_reward }}</a></li>
+                {% endif %}
+                <li><a href="{{ return }}">{{ text_return }}</a></li>
+                <li><a href="{{ transaction }}">{{ text_transaction }}</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- كرت: الأفلييت (لو مفعّل) -->
+          {% if affiliate %}
+            <div class="col-md-6 col-xl-4">
+              <div class="bareq-login-card bareq-account-card">
+                <h2 class="bareq-account-section-title">{{ text_my_affiliate }}</h2>
+                <ul class="bareq-account-list">
+                  {% if not tracking %}
+                    <li><a href="{{ affiliate }}">{{ text_affiliate_add }}</a></li>
+                  {% else %}
+                    <li><a href="{{ affiliate }}">{{ text_affiliate_edit }}</a></li>
+                    <li><a href="{{ tracking }}">{{ text_tracking }}</a></li>
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+          {% endif %}
+
+          <!-- كرت: النشرة الإخبارية -->
+          <div class="col-md-6 col-xl-4">
+            <div class="bareq-login-card bareq-account-card">
+              <h2 class="bareq-account-section-title">{{ text_my_newsletter }}</h2>
+              <ul class="bareq-account-list">
+                <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {{ content_bottom }}
+    </div>
+
+    {{ column_right }}
+  </div>
+</div>
+{{ footer }}

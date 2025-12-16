@@ -1,0 +1,66 @@
+{{ header }}
+<div id="account-forgotten" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+      <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <div class="row">
+    {{ column_left }}
+
+    <div id="content" class="col">
+      {{ content_top }}
+
+      <div class="bareq-login-wrapper">
+        <!-- عنوان الصفحة ووصفها -->
+        <div class="bareq-login-header text-center mb-4">
+          <h1 class="bareq-login-title">{{ heading_title }}</h1>
+          <p class="bareq-login-subtitle">
+            {{ text_email }}
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-xl-6">
+            <div class="bareq-login-card bareq-login-card--main">
+              <form id="form-forgotten" action="{{ confirm }}" method="post" data-oc-toggle="ajax">
+                <fieldset class="bareq-register-group">
+                  <legend class="bareq-register-title">{{ text_your_email }}</legend>
+
+                  <div class="mb-3">
+                    <label for="input-email" class="col-form-label">{{ entry_email }}</label>
+                    <input type="text"
+                           name="email"
+                           value=""
+                           placeholder="{{ entry_email }}"
+                           id="input-email"
+                           class="form-control"
+                           required/>
+                    <div id="error-email" class="invalid-feedback"></div>
+                  </div>
+                </fieldset>
+
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <a href="{{ back }}" class="bareq-link-small">
+                    {{ button_back }}
+                  </a>
+
+                  <button type="submit" class="bareq-btn-main">
+                    {{ button_continue }}
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      {{ content_bottom }}
+    </div>
+
+    {{ column_right }}
+  </div>
+</div>
+{{ footer }}

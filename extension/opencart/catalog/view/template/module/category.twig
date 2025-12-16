@@ -1,0 +1,17 @@
+<div class="list-group mb-3"> {# عرض قائمة الفئات مع إبراز الفئة الحالية والفرعية الحالية #}
+  {% for category in categories %} {# تكرار عبر الفئات الرئيسية #}
+    {% if category.category_id == category_id %} {# إبراز الفئة الحالية #}
+      <a href="{{ category.href }}" class="list-group-item active">{{ category.name }}</a> {# رابط الفئة الحالية مع تمييزه #}
+      {% if category.children %}  {# إذا كانت هناك فئات فرعية #}
+        {% for child in category.children %}  {# تكرار عبر الفئات الفرعية #}
+          {% if child.category_id == child_id %}   {# إبراز الفئة الفرعية الحالية #}
+            <a href="{{ child.href }}" class="list-group-item active">&nbsp;&nbsp;&nbsp;- {{ child.name }}</a>   {# رابط الفئة الفرعية الحالية مع تمييزه #}
+          {% else %}   {# عرض الفئة الفرعية العادية #}
+            <a href="{{ child.href }}" class="list-group-item">&nbsp;&nbsp;&nbsp;- {{ child.name }}</a>  {# رابط الفئة الفرعية العادية #}
+          {% endif %}  {# نهاية شرط الفئة الفرعية الحالية #}
+        {% endfor %}   {# نهاية تكرار الفئات الفرعية #}
+      {% endif %}      {# نهاية شرط وجود فئات فرعية #}
+    {% else %} <a href="{{ category.href }}" class="list-group-item">{{ category.name }}</a>  {# رابط الفئة العادية #}
+    {% endif %}  {# نهاية شرط الفئة الحالية #}
+  {% endfor %}   {# نهاية تكرار الفئات الرئيسية #}
+</div>

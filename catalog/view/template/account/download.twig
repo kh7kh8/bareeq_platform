@@ -1,0 +1,99 @@
+{{ header }}
+<div id="account-download" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+      <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <div class="row">
+    {{ column_left }}
+
+    <div id="content" class="col">
+      {{ content_top }}
+
+      {# الكرت العام – نفس الفيل في صفحة الـ Wishlist / Login #}
+      <div class="bareq-login-wrapper">
+
+        {# رأس الصفحة #}
+        <div class="mb-4">
+          <h1 class="bareq-login-title">{{ heading_title }}</h1>
+          <p class="bareq-login-subtitle">
+            Keep track of your downloadable products in one place.
+          </p>
+        </div>
+
+        {# الكرت الداخلي للمحتوى #}
+        <div class="bareq-login-card bareq-login-card--main">
+
+          {% if downloads %}
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover mb-0">
+                <thead>
+                  <tr>
+                    <th class="text-end"><strong>{{ column_order_id }}</strong></th>
+                    <th><strong>{{ column_name }}</strong></th>
+                    <th><strong>{{ column_size }}</strong></th>
+                    <th><strong>{{ column_date_added }}</strong></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for download in downloads %}
+                    <tr>
+                      <td class="text-end">{{ download.order_id }}</td>
+                      <td>{{ download.name }}</td>
+                      <td>{{ download.size }}</td>
+                      <td>{{ download.date_added }}</td>
+                      <td class="text-end">
+                        <a href="{{ download.href }}"
+                           data-bs-toggle="tooltip"
+                           title="{{ button_download }}"
+                           class="bareq-btn-main btn btn-sm border-0">
+                          <i class="fa-solid fa-cloud-arrow-down me-1"></i>
+                          {{ button_download }}
+                        </a>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-sm-6 text-start">
+                {{ pagination }}
+              </div>
+              <div class="col-sm-6 text-end">
+                {{ results }}
+              </div>
+            </div>
+
+          {% else %}
+            {# حالة لا توجد تنزيلات – نفس فكرة Wishlist #}
+            <div class="py-4">
+              <div class="row align-items-center">
+                <div class="col-md-8 text-md-end text-center mb-3 mb-md-0">
+                  <p class="mb-0 text-muted">
+                    {{ text_no_results }}
+                  </p>
+                </div>
+                <div class="col-md-4 text-md-start text-center mt-2 mt-md-0">
+                  <a href="{{ continue }}" class="bareq-btn-main">
+                    {{ button_continue }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+
+        </div>
+      </div>
+
+      {{ content_bottom }}
+    </div>
+
+    {{ column_right }}
+  </div>
+</div>
+{{ footer }}

@@ -1,0 +1,47 @@
+{{ header }}
+<div id="account-payment-method" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+      <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <div class="row">
+    {{ column_left }}
+
+    <div id="content" class="col">
+      {{ content_top }}
+
+      <div class="bareq-login-wrapper">
+
+        
+        <div class="mb-4">
+          <h1 class="bareq-login-title mb-1">{{ heading_title }}</h1>
+          <p class="bareq-login-subtitle">
+            {{ text_description ?? '' }}
+          </p>
+        </div>
+
+       
+        <div class="bareq-login-card bareq-login-card--main bareq-payment-card">
+
+          <div id="payment-method" class="bareq-payment-list">
+            {{ list }}
+          </div>
+
+          <div class="d-flex justify-content-end mt-3">
+            <a href="{{ back }}" class="banner-btn-outline">
+              {{ button_back }}
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      {{ content_bottom }}
+    </div>
+
+    {{ column_right }}
+  </div>
+</div>
+{{ footer }}

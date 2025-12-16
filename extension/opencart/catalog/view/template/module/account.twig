@@ -1,0 +1,25 @@
+<div class="list-group mb-3"> {#  عرض روابط حساب المستخدم بناءً على حالة تسجيل الدخول #}
+  {% if not logged %} {# إذا لم يسجل المستخدم الدخول #}
+    <a href="{{ login }}" class="list-group-item">{{ text_login }}</a> {# رابط الدخول #}
+    <a href="{{ register }}" class="list-group-item">{{ text_register }}</a> {# رابط التسجيل #}
+    <a href="{{ forgotten }}" class="list-group-item">{{ text_forgotten }}</a> {# رابط استعادة كلمة المرور #}
+  {% endif %} {# إذا كان المستخدم مسجل دخول #}
+  <a href="{{ account }}" class="list-group-item">{{ text_account }}</a> {# رابط حساب المستخدم #}
+  {% if logged %} {# إذا كان المستخدم مسجل دخول #}
+    <a href="{{ edit }}" class="list-group-item">{{ text_edit }}</a> {# رابط تعديل الحساب #}
+    <a href="{{ password }}" class="list-group-item">{{ text_password }}</a> {# رابط تغيير كلمة المرور #}
+  {% endif %} {# روابط الحساب العامة #}
+  <a href="{{ payment_method }}" class="list-group-item">{{ text_payment_method }}</a>  {# رابط طرق الدفع #}
+  <a href="{{ address }}" class="list-group-item">{{ text_address }}</a>   {# رابط عناوين الشحن #}
+  <a href="{{ wishlist }}" class="list-group-item">{{ text_wishlist }}</a>   {# رابط المفضلة #}
+  <a href="{{ order }}" class="list-group-item">{{ text_order }}</a>   {# رابط الطلبات #}
+  <a href="{{ download }}" class="list-group-item">{{ text_download }}</a>   {# رابط التنزيلات #}
+  <a href="{{ subscription }}" class="list-group-item">{{ text_subscription }}</a>   {# رابط الاشتراكات #}
+  <a href="{{ reward }}" class="list-group-item">{{ text_reward }}</a>  {# رابط نقاط المكافآت #}
+  <a href="{{ return }}" class="list-group-item">{{ text_return }}</a>   {# رابط المرتجعات #}
+  <a href="{{ transaction }}" class="list-group-item">{{ text_transaction }}</a>  {# رابط المعاملات #}
+  <a href="{{ newsletter }}" class="list-group-item">{{ text_newsletter }}</a>   {# رابط النشرة الإخبارية #}
+  {% if logged %}  {# إذا كان المستخدم مسجل دخول #}
+    <a href="{{ logout }}" class="list-group-item">{{ text_logout }}</a>   {# رابط تسجيل الخروج #}
+  {% endif %}
+</div>
