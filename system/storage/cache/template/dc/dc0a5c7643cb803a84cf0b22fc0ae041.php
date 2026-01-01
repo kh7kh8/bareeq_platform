@@ -244,6 +244,6 @@ class __TwigTemplate_857902fcadb97b1e98f62ed0129e5c72 extends Template
       <input type=\"hidden\" name=\"product_id\" value=\"{{ product_id }}\"/> <input type=\"hidden\" name=\"quantity\" value=\"{{ minimum }}\"/>
     </form>
   </div>
-</div>", "catalog/view/template/product/thumb.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\product\\thumb.twig");
+</div>", "catalog/view/template/product/thumb.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\product\\thumb.twig");
     }
 }

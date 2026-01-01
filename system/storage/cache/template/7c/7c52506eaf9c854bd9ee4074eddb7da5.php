@@ -603,6 +603,6 @@ var timer = '';
     });
 });
 //--></script>
-", "catalog/view/template/checkout/payment_method.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\checkout\\payment_method.twig");
+", "catalog/view/template/checkout/payment_method.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\checkout\\payment_method.twig");
     }
 }

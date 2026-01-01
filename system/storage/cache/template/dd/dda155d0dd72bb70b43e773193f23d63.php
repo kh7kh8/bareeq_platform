@@ -280,6 +280,6 @@ class __TwigTemplate_bccfa119874a41323de504d1186a260f extends Template
     <div class=\"text-end\"><button type=\"button\" class=\"btn btn-primary\" disabled>{{ button_confirm }}</button></div>
   {% endif %}
 </div>
-", "catalog/view/template/checkout/confirm.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\checkout\\confirm.twig");
+", "catalog/view/template/checkout/confirm.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\checkout\\confirm.twig");
     }
 }

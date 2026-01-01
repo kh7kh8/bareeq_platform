@@ -462,6 +462,6 @@ class __TwigTemplate_3fc6188e2745deffdeb998539fe22e51 extends Template
   });
   //--></script>
 </div>
-", "extension/opencart/catalog/view/template/checkout/shipping.twig", "C:\\xampp\\htdocs\\opencart\\extension\\opencart\\catalog\\view\\template\\checkout\\shipping.twig");
+", "extension/opencart/catalog/view/template/checkout/shipping.twig", "C:\\xampp\\htdocs\\bareeq_platform\\extension\\opencart\\catalog\\view\\template\\checkout\\shipping.twig");
     }
 }

@@ -123,10 +123,8 @@ class __TwigTemplate_99d3a4fe185f0a71ff8ff606c815f306 extends Template
     </div>
 
     ";
-        // line 45
-        yield ($context["column_right"] ?? null);
-        yield "
-  </div>
+        // line 46
+        yield "  </div>
 </div>
 
 <script type=\"text/javascript\"><!--
@@ -195,7 +193,7 @@ class __TwigTemplate_99d3a4fe185f0a71ff8ff606c815f306 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  171 => 83,  159 => 74,  127 => 45,  121 => 42,  111 => 35,  107 => 34,  100 => 30,  96 => 28,  87 => 21,  84 => 20,  77 => 15,  71 => 12,  66 => 9,  55 => 6,  52 => 5,  48 => 4,  42 => 1,);
+        return array (  169 => 83,  157 => 74,  127 => 46,  121 => 42,  111 => 35,  107 => 34,  100 => 30,  96 => 28,  87 => 21,  84 => 20,  77 => 15,  71 => 12,  66 => 9,  55 => 6,  52 => 5,  48 => 4,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -244,7 +242,7 @@ class __TwigTemplate_99d3a4fe185f0a71ff8ff606c815f306 extends Template
       {{ content_bottom }}
     </div>
 
-    {{ column_right }}
+    {# {{ column_right }} #}
   </div>
 </div>
 
@@ -283,6 +281,6 @@ class __TwigTemplate_99d3a4fe185f0a71ff8ff606c815f306 extends Template
 });
 //--></script>
 {{ footer }}
-", "catalog/view/template/account/wishlist.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\account\\wishlist.twig");
+", "catalog/view/template/account/wishlist.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\account\\wishlist.twig");
     }
 }

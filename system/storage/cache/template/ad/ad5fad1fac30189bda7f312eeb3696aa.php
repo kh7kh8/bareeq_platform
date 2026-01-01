@@ -474,9 +474,37 @@ class __TwigTemplate_7c8d39e7c1c0f33109d247a71b99b99a extends Template
 
             ";
         // line 187
+        yield "            <a href=\"";
+        yield ($context["wishlist"] ?? null);
+        yield "\"
+                  class=\"header-icon position-relative\"
+                  title=\"";
+        // line 189
+        yield ($context["text_wishlist"] ?? null);
+        yield "\">
+              <i class=\"fa-regular fa-heart\"></i>
+
+            ";
+        // line 193
+        yield "               ";
+        if ((array_key_exists("wishlist_total", $context) && ($context["wishlist_total"] ?? null))) {
+            // line 194
+            yield "              <span class=\"header-cart-badge\">
+                  ";
+            // line 195
+            yield ($context["wishlist_total"] ?? null);
+            yield "
+                </span>
+              ";
+        }
+        // line 198
+        yield "            </a>
+
+            ";
+        // line 201
         yield "            ";
         if (($context["logged"] ?? null)) {
-            // line 188
+            // line 202
             yield "              <a href=\"";
             yield ($context["account"] ?? null);
             yield "\" class=\"header-icon\" title=\"";
@@ -486,7 +514,7 @@ class __TwigTemplate_7c8d39e7c1c0f33109d247a71b99b99a extends Template
               </a>
             ";
         } else {
-            // line 192
+            // line 206
             yield "              <a href=\"";
             yield ($context["login"] ?? null);
             yield "\" class=\"header-icon\" title=\"";
@@ -496,12 +524,12 @@ class __TwigTemplate_7c8d39e7c1c0f33109d247a71b99b99a extends Template
               </a>
             ";
         }
-        // line 196
+        // line 210
         yield "
             ";
-        // line 198
+        // line 212
         yield "            <a href=\"";
-        yield ((array_key_exists("search_action", $context)) ? (Twig\Extension\CoreExtension::default(($context["search_action"] ?? null), "index.php?route=product/search")) : ("index.php?route=product/search"));
+        yield ((array_key_exists("search_action", $context)) ? (Twig\Extension\CoreExtension::default(($context["search_action"] ?? null), "index.php?route=product/search&language=en-gb")) : ("index.php?route=product/search&language=en-gb"));
         yield "\" class=\"header-icon\" title=\"";
         yield ((array_key_exists("text_search", $context)) ? (Twig\Extension\CoreExtension::default(($context["text_search"] ?? null), "بحث")) : ("بحث"));
         yield "\">
@@ -514,7 +542,7 @@ class __TwigTemplate_7c8d39e7c1c0f33109d247a71b99b99a extends Template
     </header>
 
     ";
-        // line 208
+        // line 222
         yield "    <main class=\"flex-grow-1 mb-4\">
       ";
         yield from [];
@@ -541,7 +569,7 @@ class __TwigTemplate_7c8d39e7c1c0f33109d247a71b99b99a extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  518 => 208,  503 => 198,  500 => 196,  490 => 192,  480 => 188,  477 => 187,  470 => 182,  461 => 179,  457 => 176,  447 => 168,  443 => 167,  435 => 162,  431 => 161,  423 => 156,  419 => 155,  411 => 150,  407 => 149,  399 => 144,  395 => 143,  390 => 140,  386 => 137,  378 => 134,  375 => 133,  369 => 129,  365 => 127,  355 => 124,  349 => 122,  347 => 121,  344 => 120,  326 => 104,  319 => 102,  312 => 98,  305 => 96,  298 => 92,  291 => 90,  285 => 86,  278 => 84,  272 => 83,  266 => 82,  260 => 81,  253 => 80,  246 => 78,  239 => 77,  237 => 76,  230 => 72,  220 => 65,  215 => 63,  206 => 57,  202 => 56,  193 => 49,  190 => 47,  188 => 46,  184 => 43,  175 => 41,  170 => 40,  167 => 38,  156 => 36,  151 => 35,  148 => 33,  139 => 31,  134 => 30,  131 => 28,  118 => 26,  113 => 25,  110 => 23,  107 => 22,  103 => 21,  101 => 20,  98 => 19,  96 => 18,  92 => 17,  89 => 16,  86 => 15,  83 => 14,  79 => 13,  76 => 12,  73 => 11,  70 => 10,  66 => 9,  63 => 8,  59 => 7,  55 => 6,  53 => 5,  50 => 3,  45 => 2,  42 => 1,);
+        return array (  546 => 222,  531 => 212,  528 => 210,  518 => 206,  508 => 202,  505 => 201,  501 => 198,  495 => 195,  492 => 194,  489 => 193,  483 => 189,  477 => 187,  470 => 182,  461 => 179,  457 => 176,  447 => 168,  443 => 167,  435 => 162,  431 => 161,  423 => 156,  419 => 155,  411 => 150,  407 => 149,  399 => 144,  395 => 143,  390 => 140,  386 => 137,  378 => 134,  375 => 133,  369 => 129,  365 => 127,  355 => 124,  349 => 122,  347 => 121,  344 => 120,  326 => 104,  319 => 102,  312 => 98,  305 => 96,  298 => 92,  291 => 90,  285 => 86,  278 => 84,  272 => 83,  266 => 82,  260 => 81,  253 => 80,  246 => 78,  239 => 77,  237 => 76,  230 => 72,  220 => 65,  215 => 63,  206 => 57,  202 => 56,  193 => 49,  190 => 47,  188 => 46,  184 => 43,  175 => 41,  170 => 40,  167 => 38,  156 => 36,  151 => 35,  148 => 33,  139 => 31,  134 => 30,  131 => 28,  118 => 26,  113 => 25,  110 => 23,  107 => 22,  103 => 21,  101 => 20,  98 => 19,  96 => 18,  92 => 17,  89 => 16,  86 => 15,  83 => 14,  79 => 13,  76 => 12,  73 => 11,  70 => 10,  66 => 9,  63 => 8,  59 => 7,  55 => 6,  53 => 5,  50 => 3,  45 => 2,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -731,6 +759,20 @@ class __TwigTemplate_7c8d39e7c1c0f33109d247a71b99b99a extends Template
               </span>
             </a>
 
+            {# أيقونة الأمنيات #}
+            <a href=\"{{ wishlist }}\"
+                  class=\"header-icon position-relative\"
+                  title=\"{{ text_wishlist }}\">
+              <i class=\"fa-regular fa-heart\"></i>
+
+            {# (اختياري) عدد الأمنيات إن كان متوفر #}
+               {% if wishlist_total is defined and wishlist_total %}
+              <span class=\"header-cart-badge\">
+                  {{ wishlist_total }}
+                </span>
+              {% endif %}
+            </a>
+
             {# أيقونة الحساب: لو مسجّل يذهب للحساب، غير مسجل يذهب لتسجيل الدخول #}
             {% if logged %}
               <a href=\"{{ account }}\" class=\"header-icon\" title=\"{{ text_account }}\">
@@ -743,7 +785,7 @@ class __TwigTemplate_7c8d39e7c1c0f33109d247a71b99b99a extends Template
             {% endif %}
 
             {# أيقونة البحث - حالياً تفتح صفحة البحث العادية، ممكن لاحقاً نخليها تفتح حقل منسدل #}
-            <a href=\"{{ search_action|default('index.php?route=product/search') }}\" class=\"header-icon\" title=\"{{ text_search|default('بحث') }}\">
+            <a href=\"{{ search_action|default('index.php?route=product/search&language=en-gb') }}\" class=\"header-icon\" title=\"{{ text_search|default('بحث') }}\">
               <i class=\"fa-solid fa-magnifying-glass\"></i>
             </a>
 
@@ -755,6 +797,6 @@ class __TwigTemplate_7c8d39e7c1c0f33109d247a71b99b99a extends Template
     {# المحتوى الرئيسي - نخلي المين كما هو لكن بدون المنيو لأننا وضعناه في الهيدر #}
     <main class=\"flex-grow-1 mb-4\">
       {# هنا يبدأ محتوى الصفحات الأخرى الذي يأتي بعد الهيدر #}
-", "catalog/view/template/common/header.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\common\\header.twig");
+", "catalog/view/template/common/header.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\common\\header.twig");
     }
 }

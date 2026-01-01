@@ -104,6 +104,6 @@ class __TwigTemplate_002bc1eac050a1efc99c9ca9f10c5b36 extends Template
     </nav>
   </div>
 {% endif %} #}
-", "catalog/view/template/common/menu.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\common\\menu.twig");
+", "catalog/view/template/common/menu.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\common\\menu.twig");
     }
 }

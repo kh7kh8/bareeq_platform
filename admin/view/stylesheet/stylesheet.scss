@@ -346,8 +346,9 @@ legend {
   top: 0px;
   right: -235px;     // 👉 كان left
   left: auto;
-  padding-top: 60px;
+  padding-top: 80px;
 }
+
 
 #content { padding-bottom: 40px; }
 
@@ -380,6 +381,116 @@ legend {
     margin-left: 0;
   }
 }
+
+/* ===========================
+   Admin Sidebar Navigation - Design Only
+   =========================== */
+
+#column-left {
+  // عنوان NAVIGATION
+  #navigation {
+    padding: 10px 18px 6px;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    .fa-bars {
+      font-size: 14px;
+    }
+  }
+
+  // القائمة الرئيسية
+  #menu {
+    margin: 0;
+    padding: 8px 10px 16px;
+    list-style: none;
+
+    // العناصر الرئيسية (لوحة التحكم، العملاء، المنتجات...)
+    > li {
+      margin-bottom: 6px;
+
+      > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; // نص وأيقونة على الطرفين
+        gap: 10px;
+        padding: 9px 14px;
+        border-radius: 999px;           // حبة طويلة مثل التصميم
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1f2937;                 // أزرق غامق
+        transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+
+        i {
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 26px;
+          height: 26px;
+          border-radius: 8px;
+          background: transparent;      // العناصر العادية بدون خلفية للأيقونة
+          color: #1f2937;
+        }
+      }
+
+      // هوفر على العناصر الرئيسية
+      > a:hover {
+        background: #e5f3ff;
+        color: #0f3f6b;
+      }
+
+      > a:hover i {
+        color: #0f3f6b;
+      }
+
+      // العنصر النشط (لوحة التحكم مثلاً) – حبة خضراء كاملة
+      &.active > a {
+        background: #8a9b6a;
+        color: #ffffff;
+        transform: translateX(-2px); // حركة خفيفة (في RTL تتحرك لليسار)
+      }
+
+      &.active > a i {
+        background: rgba(255, 255, 255, 0.18); // مربّع صغير للأيقونة
+        color: #ffffff;
+      }
+    }
+
+    // القوائم الفرعية (داخل collapse)
+    ul {
+      list-style: none;
+      padding: 4px 4px 6px;
+      margin: 0 6px 4px;
+
+      li > a {
+        display: block;
+        padding: 6px 20px;
+        border-radius: 8px;
+        font-size: 13px;
+        color: #4b5563;
+        text-decoration: none;
+        transition: background 0.2s ease, color 0.2s ease;
+      }
+
+      li > a:hover {
+        background: #e5f3ff;
+        color: #0f3f6b;
+      }
+    }
+  }
+}
+
+/* RTL: خلي الأيقونة يمين والنص يسار مثل الصورة */
+html[dir="rtl"] #column-left #menu > li > a {
+  flex-direction: row-reverse;
+}
+
 
 /* =========================================================
    NAVIGATION / MENU (Bareq)

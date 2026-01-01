@@ -150,6 +150,6 @@ class __TwigTemplate_c128d7d483e6cb2b63dde5d32525508b extends Template
     <input type=\"hidden\" name=\"redirect\" value=\"{{ redirect }}\"/>
   </form>
 {% endif %}
-", "catalog/view/template/common/currency.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\common\\currency.twig");
+", "catalog/view/template/common/currency.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\common\\currency.twig");
     }
 }

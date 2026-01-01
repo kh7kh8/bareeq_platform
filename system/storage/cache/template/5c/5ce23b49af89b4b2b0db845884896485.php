@@ -81,6 +81,6 @@ class __TwigTemplate_d5d49abee6ecbf74e885dc6559d95aa5 extends Template
     {
         return new Source("{% for module in modules %}
 {{ module }}
-{% endfor %}", "catalog/view/template/common/content_top.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\common\\content_top.twig");
+{% endfor %}", "catalog/view/template/common/content_top.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\common\\content_top.twig");
     }
 }

@@ -12155,7 +12155,7 @@ legend {
   top: 0px;
   right: -235px;
   left: auto;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 #content {
@@ -12196,6 +12196,94 @@ legend {
     margin-left: 0;
   }
 }
+/* ===========================
+   Admin Sidebar Navigation - Design Only
+   =========================== */
+#column-left #navigation {
+  padding: 10px 18px 6px;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#column-left #navigation .fa-bars {
+  font-size: 14px;
+}
+#column-left #menu {
+  margin: 0;
+  padding: 8px 10px 16px;
+  list-style: none;
+}
+#column-left #menu > li {
+  margin-bottom: 6px;
+}
+#column-left #menu > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+#column-left #menu > li > a i {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: transparent;
+  color: #1f2937;
+}
+#column-left #menu > li > a:hover {
+  background: #e5f3ff;
+  color: #0f3f6b;
+}
+#column-left #menu > li > a:hover i {
+  color: #0f3f6b;
+}
+#column-left #menu > li.active > a {
+  background: #8a9b6a;
+  color: #ffffff;
+  transform: translateX(-2px);
+}
+#column-left #menu > li.active > a i {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+#column-left #menu ul {
+  list-style: none;
+  padding: 4px 4px 6px;
+  margin: 0 6px 4px;
+}
+#column-left #menu ul li > a {
+  display: block;
+  padding: 6px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #4b5563;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+#column-left #menu ul li > a:hover {
+  background: #e5f3ff;
+  color: #0f3f6b;
+}
+
+/* RTL: خلي الأيقونة يمين والنص يسار مثل الصورة */
+html[dir=rtl] #column-left #menu > li > a {
+  flex-direction: row-reverse;
+}
+
 /* =========================================================
    NAVIGATION / MENU (Bareq)
    ========================================================= */

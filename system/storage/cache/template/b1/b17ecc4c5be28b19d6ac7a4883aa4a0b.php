@@ -1184,6 +1184,6 @@ class __TwigTemplate_d002a913acc6c59f60ead14d494c4f4a extends Template
     });
 });
 //--></script>
-", "catalog/view/template/checkout/shipping_address.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\checkout\\shipping_address.twig");
+", "catalog/view/template/checkout/shipping_address.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\checkout\\shipping_address.twig");
     }
 }

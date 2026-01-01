@@ -131,6 +131,6 @@ class __TwigTemplate_2781c53088f93c53ee9eba5d5d52a278 extends Template
     </div>
   </div>
 </div>
-", "extension/opencart/catalog/view/template/checkout/coupon.twig", "C:\\xampp\\htdocs\\opencart\\extension\\opencart\\catalog\\view\\template\\checkout\\coupon.twig");
+", "extension/opencart/catalog/view/template/checkout/coupon.twig", "C:\\xampp\\htdocs\\bareeq_platform\\extension\\opencart\\catalog\\view\\template\\checkout\\coupon.twig");
     }
 }

@@ -183,6 +183,20 @@
               </span>
             </a>
 
+            {# أيقونة الأمنيات #}
+            <a href="{{ wishlist }}"
+                  class="header-icon position-relative"
+                  title="{{ text_wishlist }}">
+              <i class="fa-regular fa-heart"></i>
+
+            {# (اختياري) عدد الأمنيات إن كان متوفر #}
+               {% if wishlist_total is defined and wishlist_total %}
+              <span class="header-cart-badge">
+                  {{ wishlist_total }}
+                </span>
+              {% endif %}
+            </a>
+
             {# أيقونة الحساب: لو مسجّل يذهب للحساب، غير مسجل يذهب لتسجيل الدخول #}
             {% if logged %}
               <a href="{{ account }}" class="header-icon" title="{{ text_account }}">
@@ -195,7 +209,7 @@
             {% endif %}
 
             {# أيقونة البحث - حالياً تفتح صفحة البحث العادية، ممكن لاحقاً نخليها تفتح حقل منسدل #}
-            <a href="{{ search_action|default('index.php?route=product/search') }}" class="header-icon" title="{{ text_search|default('بحث') }}">
+            <a href="{{ search_action|default('index.php?route=product/search&language=en-gb') }}" class="header-icon" title="{{ text_search|default('بحث') }}">
               <i class="fa-solid fa-magnifying-glass"></i>
             </a>
 

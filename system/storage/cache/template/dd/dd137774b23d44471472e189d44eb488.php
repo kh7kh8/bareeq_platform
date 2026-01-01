@@ -61,89 +61,91 @@ class __TwigTemplate_731c65f4993cb85d43fb88c7dd710315 extends Template
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 7
         yield "  </ul>
-  <div class=\"row\">";
-        // line 8
+  <div class=\"row\">
+    ";
+        // line 9
         yield ($context["column_left"] ?? null);
         yield "
-    <div id=\"content\" class=\"col\">";
-        // line 9
+    <div id=\"content\" class=\"col\">
+      ";
+        // line 11
         yield ($context["content_top"] ?? null);
         yield "
-      <h1>";
-        // line 10
+      <h1 class=\"checkout-heading\">";
+        // line 12
         yield ($context["heading_title"] ?? null);
         yield "</h1>
       <div class=\"row\">
         ";
-        // line 12
+        // line 14
         if (((($context["register"] ?? null) || ($context["payment_address"] ?? null)) || ($context["shipping_address"] ?? null))) {
-            // line 13
-            yield "          <div class=\"col-md-7 mb-3\">
+            // line 15
+            yield "          <div class=\"col-md-7 mb-4\">
             ";
-            // line 14
+            // line 16
             if (($context["register"] ?? null)) {
-                // line 15
-                yield "              <div id=\"checkout-register\">";
+                // line 17
+                yield "              <div id=\"checkout-register\" class=\"checkout-section\">";
                 yield ($context["register"] ?? null);
                 yield "</div>
             ";
             }
-            // line 17
+            // line 19
             yield "            ";
             if (($context["payment_address"] ?? null)) {
-                // line 18
-                yield "              <div id=\"checkout-payment-address\">";
+                // line 20
+                yield "              <div id=\"checkout-payment-address\" class=\"checkout-section\">";
                 yield ($context["payment_address"] ?? null);
                 yield "</div>
             ";
             }
-            // line 20
+            // line 22
             yield "            ";
             if (($context["shipping_address"] ?? null)) {
-                // line 21
-                yield "              <div id=\"checkout-shipping-address\">";
+                // line 23
+                yield "              <div id=\"checkout-shipping-address\" class=\"checkout-section\">";
                 yield ($context["shipping_address"] ?? null);
                 yield "</div>
             ";
             }
-            // line 23
+            // line 25
             yield "          </div>
         ";
         }
-        // line 25
-        yield "        <div class=\"col\">
+        // line 27
+        yield "        <div class=\"col-md-5\">
           ";
-        // line 26
+        // line 28
         if (($context["shipping_method"] ?? null)) {
-            // line 27
-            yield "            <div id=\"checkout-shipping-method\" class=\"mb-3\">";
+            // line 29
+            yield "            <div id=\"checkout-shipping-method\" class=\"checkout-section\">";
             yield ($context["shipping_method"] ?? null);
             yield "</div>
           ";
         }
-        // line 29
-        yield "          <div id=\"checkout-payment-method\" class=\"mb-4\">";
+        // line 31
+        yield "          <div id=\"checkout-payment-method\" class=\"checkout-section mb-4\">";
         yield ($context["payment_method"] ?? null);
         yield "</div>
-          <div id=\"checkout-confirm\">";
-        // line 30
+          <div id=\"checkout-confirm\" class=\"checkout-section\">";
+        // line 32
         yield ($context["confirm"] ?? null);
         yield "</div>
         </div>
       </div>
     </div>
     ";
-        // line 34
+        // line 36
         yield ($context["content_bottom"] ?? null);
         yield "
   </div>
   ";
-        // line 36
+        // line 38
         yield ($context["column_right"] ?? null);
         yield "
 </div>
 ";
-        // line 38
+        // line 40
         yield ($context["footer"] ?? null);
         yield "
 ";
@@ -171,7 +173,7 @@ class __TwigTemplate_731c65f4993cb85d43fb88c7dd710315 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  147 => 38,  142 => 36,  137 => 34,  130 => 30,  125 => 29,  119 => 27,  117 => 26,  114 => 25,  110 => 23,  104 => 21,  101 => 20,  95 => 18,  92 => 17,  86 => 15,  84 => 14,  81 => 13,  79 => 12,  74 => 10,  70 => 9,  66 => 8,  63 => 7,  52 => 5,  48 => 4,  42 => 1,);
+        return array (  149 => 40,  144 => 38,  139 => 36,  132 => 32,  127 => 31,  121 => 29,  119 => 28,  116 => 27,  112 => 25,  106 => 23,  103 => 22,  97 => 20,  94 => 19,  88 => 17,  86 => 16,  83 => 15,  81 => 14,  76 => 12,  72 => 11,  67 => 9,  63 => 7,  52 => 5,  48 => 4,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -183,29 +185,31 @@ class __TwigTemplate_731c65f4993cb85d43fb88c7dd710315 extends Template
       <li class=\"breadcrumb-item\"><a href=\"{{ breadcrumb.href }}\">{{ breadcrumb.text }}</a></li>
     {% endfor %}
   </ul>
-  <div class=\"row\">{{ column_left }}
-    <div id=\"content\" class=\"col\">{{ content_top }}
-      <h1>{{ heading_title }}</h1>
+  <div class=\"row\">
+    {{ column_left }}
+    <div id=\"content\" class=\"col\">
+      {{ content_top }}
+      <h1 class=\"checkout-heading\">{{ heading_title }}</h1>
       <div class=\"row\">
         {% if register or payment_address or shipping_address %}
-          <div class=\"col-md-7 mb-3\">
+          <div class=\"col-md-7 mb-4\">
             {% if register %}
-              <div id=\"checkout-register\">{{ register }}</div>
+              <div id=\"checkout-register\" class=\"checkout-section\">{{ register }}</div>
             {% endif %}
             {% if payment_address %}
-              <div id=\"checkout-payment-address\">{{ payment_address }}</div>
+              <div id=\"checkout-payment-address\" class=\"checkout-section\">{{ payment_address }}</div>
             {% endif %}
             {% if shipping_address %}
-              <div id=\"checkout-shipping-address\">{{ shipping_address }}</div>
+              <div id=\"checkout-shipping-address\" class=\"checkout-section\">{{ shipping_address }}</div>
             {% endif %}
           </div>
         {% endif %}
-        <div class=\"col\">
+        <div class=\"col-md-5\">
           {% if shipping_method %}
-            <div id=\"checkout-shipping-method\" class=\"mb-3\">{{ shipping_method }}</div>
+            <div id=\"checkout-shipping-method\" class=\"checkout-section\">{{ shipping_method }}</div>
           {% endif %}
-          <div id=\"checkout-payment-method\" class=\"mb-4\">{{ payment_method }}</div>
-          <div id=\"checkout-confirm\">{{ confirm }}</div>
+          <div id=\"checkout-payment-method\" class=\"checkout-section mb-4\">{{ payment_method }}</div>
+          <div id=\"checkout-confirm\" class=\"checkout-section\">{{ confirm }}</div>
         </div>
       </div>
     </div>
@@ -214,6 +218,6 @@ class __TwigTemplate_731c65f4993cb85d43fb88c7dd710315 extends Template
   {{ column_right }}
 </div>
 {{ footer }}
-", "catalog/view/template/checkout/checkout.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\checkout\\checkout.twig");
+", "catalog/view/template/checkout/checkout.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\checkout\\checkout.twig");
     }
 }

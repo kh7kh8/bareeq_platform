@@ -96,6 +96,6 @@ class __TwigTemplate_7824d3deadcf3aee6d1c40e9e24faab1 extends Template
   {% endfor %}
 </aside>
 {% endif %}
-", "catalog/view/template/common/column_left.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\common\\column_left.twig");
+", "catalog/view/template/common/column_left.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\common\\column_left.twig");
     }
 }

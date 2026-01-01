@@ -176,3 +176,29 @@
 2025-12-27 19:19:34 - Undefined array key "ar" in C:\xampp\htdocs\bareeq_platform\catalog\controller\startup\language.php on line 41
 2025-12-29 05:36:44 - Opencart\System\Engine\Loader::language(): Argument #2 ($prefix) must be of type string, array given, called in C:\xampp\htdocs\bareeq_platform\catalog\controller\checkout\cart.php on line 23 in C:\xampp\htdocs\bareeq_platform\system\engine\loader.php on line 205
 2025-12-30 18:41:10 - Undefined array key "ar" in C:\xampp\htdocs\bareeq_platform\catalog\controller\startup\language.php on line 41
+2025-12-31 09:26:07 - Error: Could not load template common/column_left! in C:\xampp\htdocs\bareeq_platform\system\library\template\twig.php on line 121
+2025-12-31 11:38:39 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:42 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:45 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:46 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:47 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:47 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:47 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:48 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:48 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:48 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:48 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:48 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:52 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:54 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:55 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:55 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:56 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:56 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:38:56 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:39:02 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 11:39:03 - password_verify(): Passing null to parameter #2 ($hash) of type string is deprecated in C:\xampp\htdocs\bareeq_platform\system\library\cart\customer.php on line 112
+2025-12-31 15:12:27 - Error: Could not load model extension/opencart/dashboard/map! in C:\xampp\htdocs\bareeq_platform\system\engine\loader.php on line 148
+2025-12-31 15:13:27 - Error: Could not load model extension/opencart/dashboard/map! in C:\xampp\htdocs\bareeq_platform\system\engine\loader.php on line 148
+2025-12-31 15:13:31 - Error: Could not load model extension/opencart/dashboard/map! in C:\xampp\htdocs\bareeq_platform\system\engine\loader.php on line 148
+2025-12-31 17:37:38 - Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in C:\xampp\htdocs\bareeq_platform\admin\controller\common\developer.php on line 72

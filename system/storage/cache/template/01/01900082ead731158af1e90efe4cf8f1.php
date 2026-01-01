@@ -403,6 +403,6 @@ class __TwigTemplate_1d037a9c046a492738a8dac601c497a3 extends Template
         });
     });
 });
-//--></script>", "catalog/view/template/checkout/shipping_method.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\checkout\\shipping_method.twig");
+//--></script>", "catalog/view/template/checkout/shipping_method.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\checkout\\shipping_method.twig");
     }
 }

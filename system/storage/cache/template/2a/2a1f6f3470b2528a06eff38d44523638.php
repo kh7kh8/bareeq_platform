@@ -222,6 +222,6 @@ class __TwigTemplate_e53153a2000671a3196aeaafc1baed02 extends Template
     <a href=\"{{ logout }}\" class=\"list-group-item\">{{ text_logout }}</a>   {# رابط تسجيل الخروج #}
   {% endif %}
 </div>
-", "extension/opencart/catalog/view/template/module/account.twig", "C:\\xampp\\htdocs\\opencart\\extension\\opencart\\catalog\\view\\template\\module\\account.twig");
+", "extension/opencart/catalog/view/template/module/account.twig", "C:\\xampp\\htdocs\\bareeq_platform\\extension\\opencart\\catalog\\view\\template\\module\\account.twig");
     }
 }

@@ -45,140 +45,141 @@ class __TwigTemplate_dde6b699c038deddce54b6be0a1deb64 extends Template
 ";
         // line 98
         $context["lang"] = "ar";
-        yield " ";
-        // line 99
-        yield "
+        yield " 
 ";
         // line 100
-        $context["translations"] = ["ar" => ["banner_default_desc" => "استكشف عالماً جديداً من التسوق الإلكتروني في الواقع الافتراضي. اختبر تجربة تسوق فريدة تجمع بين الابتكار والخيال.", "start_shopping" => "ابدأ التسوق الآن", "learn_more" => "تعرف علينا", "features_badge" => "المميزات", "features_title" => "لماذا تختار بريق؟", "features_subtitle" => "نقدم لك تجربة تسوق فريدة تجمع بين التكنولوجيا المتقدمة والراحة.", "feature1_title" => "تجربة ثلاثية الأبعاد", "feature1_text" => "استكشف المنتجات في بيئة ثلاثية الأبعاد تفاعلية.", "feature2_title" => "تسليم فوري", "feature2_text" => "احصل على منتجاتك الرقمية فوراً بعد الشراء.", "feature3_title" => "أمان متقدم", "feature3_text" => "نحمي بياناتك بأحدث تقنيات التشفير.", "feature4_title" => "دعم على مدار الساعة", "feature4_text" => "فريق دعم متاح 24/7 لمساعدتك في أي وقت."], "en" => ["banner_default_desc" => "Explore a new world of online shopping in virtual reality. Experience a unique shopping journey combining innovation and imagination.", "start_shopping" => "Start Shopping", "learn_more" => "Learn More", "features_badge" => "Features", "features_title" => "Why Choose Bareeq?", "features_subtitle" => "We offer a unique shopping experience combining advanced technology and convenience.", "feature1_title" => "3D Experience", "feature1_text" => "Explore products in an interactive 3D environment.", "feature2_title" => "Instant Delivery", "feature2_text" => "Get your digital products instantly after purchase.", "feature3_title" => "Advanced Security", "feature3_text" => "We protect your data with the latest encryption technologies.", "feature4_title" => "24/7 Support", "feature4_text" => "Support team available 24/7 to assist you anytime."]];
-        // line 134
         yield "
 ";
+        // line 101
+        $context["translations"] = ["ar" => ["banner_default_desc" => "استكشف عالماً جديداً من التسوق الإلكتروني في الواقع الافتراضي. اختبر تجربة تسوق فريدة تجمع بين الابتكار والخيال.", "start_shopping" => "ابدأ التسوق الآن", "learn_more" => "تعرف علينا", "features_badge" => "المميزات", "features_title" => "لماذا تختار بريق؟", "features_subtitle" => "نقدم لك تجربة تسوق فريدة تجمع بين التكنولوجيا المتقدمة والراحة.", "feature1_title" => "تجربة ثلاثية الأبعاد", "feature1_text" => "استكشف المنتجات في بيئة ثلاثية الأبعاد تفاعلية.", "feature2_title" => "تسليم فوري", "feature2_text" => "احصل على منتجاتك الرقمية فوراً بعد الشراء.", "feature3_title" => "أمان متقدم", "feature3_text" => "نحمي بياناتك بأحدث تقنيات التشفير.", "feature4_title" => "دعم على مدار الساعة", "feature4_text" => "فريق دعم متاح 24/7 لمساعدتك في أي وقت."], "en" => ["banner_default_desc" => "Explore a new world of online shopping in virtual reality. Experience a unique shopping journey combining innovation and imagination.", "start_shopping" => "Start Shopping", "learn_more" => "Learn More", "features_badge" => "Features", "features_title" => "Why Choose Bareeq?", "features_subtitle" => "We offer a unique shopping experience combining advanced technology and convenience.", "feature1_title" => "3D Experience", "feature1_text" => "Explore products in an interactive 3D environment.", "feature2_title" => "Instant Delivery", "feature2_text" => "Get your digital products instantly after purchase.", "feature3_title" => "Advanced Security", "feature3_text" => "We protect your data with the latest encryption technologies.", "feature4_title" => "24/7 Support", "feature4_text" => "Support team available 24/7 to assist you anytime."]];
         // line 135
-        $context["t"] = (($_v0 = ($context["translations"] ?? null)) && is_array($_v0) || $_v0 instanceof ArrayAccess ? ($_v0[($context["lang"] ?? null)] ?? null) : null);
+        yield "
+";
         // line 136
+        $context["t"] = (($_v0 = ($context["translations"] ?? null)) && is_array($_v0) || $_v0 instanceof ArrayAccess ? ($_v0[($context["lang"] ?? null)] ?? null) : null);
+        // line 137
         yield "
 <div id=\"carousel-banner-";
-        // line 137
+        // line 138
         yield ($context["module"] ?? null);
         yield "\" class=\"custom-banner-box\">
   ";
-        // line 138
+        // line 139
         if (($context["banners"] ?? null)) {
-            // line 139
+            // line 140
             yield "    ";
             $context["banner"] = (($_v1 = ($context["banners"] ?? null)) && is_array($_v1) || $_v1 instanceof ArrayAccess ? ($_v1[0] ?? null) : null);
-            // line 140
+            // line 141
             yield "
     <div class=\"banner-content row align-items-center\">
       <div class=\"col-lg-6 col-md-12 banner-image text-center\">
         <img src=\"";
-            // line 143
-            yield CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "image", [], "any", false, false, false, 143);
+            // line 144
+            yield CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "image", [], "any", false, false, false, 144);
             yield "\" alt=\"";
-            yield CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "title", [], "any", false, false, false, 143);
+            yield CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "title", [], "any", false, false, false, 144);
             yield "\" class=\"img-fluid\"/>
       </div>
 
       <div class=\"col-lg-6 col-md-12 banner-text text-center text-lg-start\">
         <h2 class=\"banner-title\">";
-            // line 147
-            yield CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "title", [], "any", false, false, false, 147);
+            // line 148
+            yield CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "title", [], "any", false, false, false, 148);
             yield "</h2>
 
         <p class=\"banner-desc\">
           ";
-            // line 150
-            yield ((CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "description", [], "any", false, false, false, 150)) ? (CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "description", [], "any", false, false, false, 150)) : (CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "banner_default_desc", [], "any", false, false, false, 150)));
+            // line 151
+            yield ((CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "description", [], "any", false, false, false, 151)) ? (CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "description", [], "any", false, false, false, 151)) : (CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "banner_default_desc", [], "any", false, false, false, 151)));
             yield "
         </p>
 
         ";
-            // line 153
-            if (CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "link", [], "any", false, false, false, 153)) {
-                // line 154
+            // line 154
+            if (CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "link", [], "any", false, false, false, 154)) {
+                // line 155
                 yield "          <a href=\"";
-                yield CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "link", [], "any", false, false, false, 154);
+                yield CoreExtension::getAttribute($this->env, $this->source, ($context["banner"] ?? null), "link", [], "any", false, false, false, 155);
                 yield "\" class=\"banner-btn\">";
-                yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "start_shopping", [], "any", false, false, false, 154);
+                yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "start_shopping", [], "any", false, false, false, 155);
                 yield "</a>
         ";
             }
-            // line 156
+            // line 157
             yield "
         <a href=\"#\" class=\"banner-btn-outline\">";
-            // line 157
-            yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "learn_more", [], "any", false, false, false, 157);
+            // line 158
+            yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "learn_more", [], "any", false, false, false, 158);
             yield "</a>
       </div>
     </div>
   ";
         }
-        // line 161
+        // line 162
         yield "</div>
 
 <!-- المميزات - لماذا تختار بريق؟ -->
 <section class=\"features-section\" id=\"features\">
   <div class=\"features-container\">
     <div class=\"features-badge\">";
-        // line 166
-        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "features_badge", [], "any", false, false, false, 166);
+        // line 167
+        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "features_badge", [], "any", false, false, false, 167);
         yield "</div>
     <h2 class=\"features-title\">";
-        // line 167
-        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "features_title", [], "any", false, false, false, 167);
+        // line 168
+        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "features_title", [], "any", false, false, false, 168);
         yield "</h2>
     <p class=\"features-subtitle\">";
-        // line 168
-        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "features_subtitle", [], "any", false, false, false, 168);
+        // line 169
+        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "features_subtitle", [], "any", false, false, false, 169);
         yield "</p>
 
     <div class=\"features-grid\">
       <article class=\"feature-card\">
         <div class=\"feature-icon\"><i class=\"fa-solid fa-vr-cardboard\"></i></div>
         <h3 class=\"feature-title\">";
-        // line 173
-        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature1_title", [], "any", false, false, false, 173);
+        // line 174
+        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature1_title", [], "any", false, false, false, 174);
         yield "</h3>
         <p class=\"feature-text\">";
-        // line 174
-        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature1_text", [], "any", false, false, false, 174);
+        // line 175
+        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature1_text", [], "any", false, false, false, 175);
         yield "</p>
       </article>
 
       <article class=\"feature-card\">
         <div class=\"feature-icon\"><i class=\"fa-solid fa-bolt\"></i></div>
         <h3 class=\"feature-title\">";
-        // line 179
-        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature2_title", [], "any", false, false, false, 179);
+        // line 180
+        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature2_title", [], "any", false, false, false, 180);
         yield "</h3>
         <p class=\"feature-text\">";
-        // line 180
-        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature2_text", [], "any", false, false, false, 180);
+        // line 181
+        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature2_text", [], "any", false, false, false, 181);
         yield "</p>
       </article>
 
       <article class=\"feature-card\">
         <div class=\"feature-icon\"><i class=\"fa-solid fa-shield-halved\"></i></div>
         <h3 class=\"feature-title\">";
-        // line 185
-        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature3_title", [], "any", false, false, false, 185);
+        // line 186
+        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature3_title", [], "any", false, false, false, 186);
         yield "</h3>
         <p class=\"feature-text\">";
-        // line 186
-        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature3_text", [], "any", false, false, false, 186);
+        // line 187
+        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature3_text", [], "any", false, false, false, 187);
         yield "</p>
       </article>
 
       <article class=\"feature-card\">
         <div class=\"feature-icon\"><i class=\"fa-solid fa-headset\"></i></div>
         <h3 class=\"feature-title\">";
-        // line 191
-        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature4_title", [], "any", false, false, false, 191);
+        // line 192
+        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature4_title", [], "any", false, false, false, 192);
         yield "</h3>
         <p class=\"feature-text\">";
-        // line 192
-        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature4_text", [], "any", false, false, false, 192);
+        // line 193
+        yield CoreExtension::getAttribute($this->env, $this->source, ($context["t"] ?? null), "feature4_text", [], "any", false, false, false, 193);
         yield "</p>
       </article>
     </div>
@@ -209,7 +210,7 @@ class __TwigTemplate_dde6b699c038deddce54b6be0a1deb64 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  181 => 192,  177 => 191,  169 => 186,  165 => 185,  157 => 180,  153 => 179,  145 => 174,  141 => 173,  133 => 168,  129 => 167,  125 => 166,  118 => 161,  111 => 157,  108 => 156,  100 => 154,  98 => 153,  92 => 150,  86 => 147,  77 => 143,  72 => 140,  69 => 139,  67 => 138,  63 => 137,  60 => 136,  58 => 135,  55 => 134,  53 => 100,  50 => 99,  47 => 98,  42 => 94,);
+        return array (  182 => 193,  178 => 192,  170 => 187,  166 => 186,  158 => 181,  154 => 180,  146 => 175,  142 => 174,  134 => 169,  130 => 168,  126 => 167,  119 => 162,  112 => 158,  109 => 157,  101 => 155,  99 => 154,  93 => 151,  87 => 148,  78 => 144,  73 => 141,  70 => 140,  68 => 139,  64 => 138,  61 => 137,  59 => 136,  56 => 135,  54 => 101,  51 => 100,  47 => 98,  42 => 94,);
     }
 
     public function getSourceContext(): Source
@@ -311,7 +312,8 @@ class __TwigTemplate_dde6b699c038deddce54b6be0a1deb64 extends Template
 
 
 {# تعريف الترجمة في نفس الملف #}
-{% set lang = 'ar' %} {# غيري هذا إلى 'en' لتجربة اللغة الإنجليزية #}
+{% set lang = 'ar' %} 
+{# غيري هذا إلى 'en' لتجربة اللغة الإنجليزية #}
 
 {% set translations = {
   'ar': {

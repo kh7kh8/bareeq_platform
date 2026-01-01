@@ -325,6 +325,6 @@ class __TwigTemplate_a9f16eabb1eb76d8d2295fef732a8811 extends Template
 {% endfor %}
 <script src=\"./catalog/view/javascript/framework/webcomponent.js\" type=\"module\"></script>
 </body></html>
-", "catalog/view/template/common/footer.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\common\\footer.twig");
+", "catalog/view/template/common/footer.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\common\\footer.twig");
     }
 }

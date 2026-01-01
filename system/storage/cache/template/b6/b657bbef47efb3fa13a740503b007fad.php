@@ -432,6 +432,6 @@ class __TwigTemplate_ffb0c88b6ae76fad9c3696deea37ef7f extends Template
     {% endif %}
   </ul>
 </div>
-", "catalog/view/template/common/cart.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\common\\cart.twig");
+", "catalog/view/template/common/cart.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\common\\cart.twig");
     }
 }

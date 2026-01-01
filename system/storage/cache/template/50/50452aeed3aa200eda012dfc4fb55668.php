@@ -132,6 +132,6 @@ class __TwigTemplate_01eaafff6fd3c4e9b4b6cdf70b6de464 extends Template
     <input type=\"hidden\" name=\"code\" value=\"{{ code }}\" id=\"input-language\"/>
     <input type=\"hidden\" name=\"redirect\" value=\"{{ redirect }}\"/>
   </form>
-{% endif %}", "catalog/view/template/common/language.twig", "C:\\xampp\\htdocs\\opencart\\catalog\\view\\template\\common\\language.twig");
+{% endif %}", "catalog/view/template/common/language.twig", "C:\\xampp\\htdocs\\bareeq_platform\\catalog\\view\\template\\common\\language.twig");
     }
 }
